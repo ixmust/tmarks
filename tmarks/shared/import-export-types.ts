@@ -66,6 +66,7 @@ export type ExportFormat = 'json' | 'html'
 
 export interface TMarksExportData {
   version: string
+  format: 'tmarks' // TMarks 专属标识
   exported_at: string
   user: ExportUser
   bookmarks: ExportBookmark[]
@@ -76,6 +77,7 @@ export interface TMarksExportData {
     total_tags: number
     total_tab_groups?: number
     export_format: ExportFormat
+    source: 'tmarks' // 明确标识来源
   }
 }
 

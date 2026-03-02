@@ -17,8 +17,8 @@ interface TabItemListProps {
   onItemClick: (item: TabGroupItem, e: React.MouseEvent | React.ChangeEvent<HTMLInputElement>) => void
   onEditItem: (item: TabGroupItem) => void
   onSaveEdit: (groupId: string, itemId: string) => void
-  onTogglePin: (groupId: string, itemId: string, currentPinned: number) => void
-  onToggleTodo: (groupId: string, itemId: string, currentTodo: number) => void
+  onTogglePin: (groupId: string, itemId: string, currentPinned: boolean) => void
+  onToggleTodo: (groupId: string, itemId: string, currentTodo: boolean) => void
   onDeleteItem: (groupId: string, itemId: string, title: string) => void
   onMoveItem?: (item: TabGroupItem) => void
   setEditingItemId: (id: string | null) => void

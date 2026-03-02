@@ -278,12 +278,12 @@ const BookmarkListItem = memo(function BookmarkListItem({
               >
                 {bookmark.title}
               </button>
-              {!!bookmark.is_pinned && (
+              {bookmark.is_pinned && (
                 <span className="bg-warning text-warning-content text-xs px-2 py-0.5 rounded-full font-medium flex-shrink-0" title={t('status.pinned')}>
                   {t('status.pinned')}
                 </span>
               )}
-              {!!bookmark.is_archived && (
+              {bookmark.is_archived && (
                 <span className="bg-base-content/40 text-card text-xs px-2 py-0.5 rounded-full font-medium flex-shrink-0" title={t('status.archived')}>
                   {t('status.archived')}
                 </span>

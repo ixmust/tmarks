@@ -257,6 +257,7 @@ async function collectUserData(db: D1Database, userId: string): Promise<TMarksEx
 
     return {
       version: EXPORT_VERSION,
+      format: 'tmarks' as const,
       exported_at: exportedAt,
       user: exportUser,
       bookmarks: exportBookmarks,
@@ -266,7 +267,8 @@ async function collectUserData(db: D1Database, userId: string): Promise<TMarksEx
         total_bookmarks: exportBookmarks.length,
         total_tags: exportTags.length,
         total_tab_groups: exportTabGroups.length,
-        export_format: 'json'
+        export_format: 'json',
+        source: 'tmarks'
       }
     }
 

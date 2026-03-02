@@ -26,7 +26,7 @@ export function PinnedItemsSection({ tabGroups, onUnpin }: PinnedItemsSectionPro
   tabGroups.forEach(group => {
     if (group.items && group.items.length > 0) {
       group.items.forEach(item => {
-        if (item.is_pinned === 1) {
+        if (item.is_pinned) {
           pinnedItems.push({
             ...item,
             groupTitle: group.title,

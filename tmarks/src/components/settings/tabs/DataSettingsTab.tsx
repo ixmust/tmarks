@@ -5,19 +5,19 @@
 
 import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
-import { Database, Download, Upload, Camera, Trash2, Bot, ChevronDown, ChevronUp } from 'lucide-react'
+import { Database, Download, Camera, Trash2, Bot, ChevronDown, ChevronUp } from 'lucide-react'
 import { useQueryClient } from '@tanstack/react-query'
 import { ExportSection } from '@/components/import-export/ExportSection'
-import { ImportSection } from '@/components/import-export/ImportSection'
+// 注意：批量导入功能已移至浏览器扩展（Tab）中实现
+// import { ImportSection } from '@/components/import-export/ImportSection'
 import { ConfirmDialog } from '@/components/common/ConfirmDialog'
 import { BOOKMARKS_QUERY_KEY } from '@/hooks/useBookmarks'
-import { TAGS_QUERY_KEY } from '@/hooks/useTags'
 import { useToastStore } from '@/stores/toastStore'
 import { useAuthStore } from '@/stores/authStore'
 import { useR2StorageQuota } from '@/hooks/useStorage'
 import { AiSettingsTab } from './AiSettingsTab'
 import { SettingsSection, SettingsDivider } from '../SettingsSection'
-import type { ExportFormat, ExportOptions, ImportResult } from '@shared/import-export-types'
+import type { ExportFormat, ExportOptions } from '@shared/import-export-types'
 
 export function DataSettingsTab() {
   const { t } = useTranslation('settings')
@@ -25,7 +25,8 @@ export function DataSettingsTab() {
   const { addToast } = useToastStore()
   const { accessToken } = useAuthStore()
   const { data: r2Quota, isLoading: isLoadingR2Quota } = useR2StorageQuota()
-  const [activeTab, setActiveTab] = useState<'export' | 'import'>('export')
+  // 移除导入标签页，只保留导出
+  // const [activeTab, setActiveTab] = useState<'export' | 'import'>('export')
   const [isCleaningSnapshots, setIsCleaningSnapshots] = useState(false)
   const [showCleanupConfirm, setShowCleanupConfirm] = useState(false)
   const [showAiSettings, setShowAiSettings] = useState(false)
@@ -35,11 +36,8 @@ export function DataSettingsTab() {
     addToast('success', t('data.exportSuccess', { details }))
   }
 
-  const handleImportComplete = (result: ImportResult) => {
-    addToast('success', t('data.importSuccess', { success: result.success, tags: result.created_tags.length }))
-    queryClient.invalidateQueries({ queryKey: [BOOKMARKS_QUERY_KEY] })
-    queryClient.invalidateQueries({ queryKey: [TAGS_QUERY_KEY] })
-  }
+  // 移除导入完成处理函数
+  // const handleImportComplete = (result: ImportResult) => { ... }
 
   const handleCleanupAllSnapshots = async () => {
     setShowCleanupConfirm(true)
@@ -140,37 +138,14 @@ export function DataSettingsTab() {
       {/* 导入导出 */}
       <SettingsSection icon={Download} title={t('data.importExport.title')} description={t('data.importExport.description')}>
         <div className="space-y-4">
-          <div className="flex gap-2 border-b border-border">
-            <button
-              onClick={() => setActiveTab('export')}
-              className={`flex items-center gap-2 px-4 py-2 border-b-2 transition-colors ${
-                activeTab === 'export'
-                  ? 'border-primary text-primary'
-                  : 'border-transparent text-muted-foreground hover:text-foreground'
-              }`}
-            >
-              <Download className="w-4 h-4" />
-              {t('data.importExport.export')}
-            </button>
-            <button
-              onClick={() => setActiveTab('import')}
-              className={`flex items-center gap-2 px-4 py-2 border-b-2 transition-colors ${
-                activeTab === 'import'
-                  ? 'border-primary text-primary'
-                  : 'border-transparent text-muted-foreground hover:text-foreground'
-              }`}
-            >
-              <Upload className="w-4 h-4" />
-              {t('data.importExport.import')}
-            </button>
-          </div>
-
           <div className="p-4 rounded-lg border border-border bg-card">
-            {activeTab === 'export' ? (
-              <ExportSection onExport={handleExportComplete} />
-            ) : (
-              <ImportSection onImport={handleImportComplete} />
-            )}
+            <ExportSection onExport={handleExportComplete} />
+            {/* 导入功能提示 */}
+            <div className="mt-4 p-3 bg-blue-50 dark:bg-blue-950/20 border border-blue-200 dark:border-blue-800 rounded-lg">
+              <p className="text-xs sm:text-sm text-blue-700 dark:text-blue-300">
+                💡 批量导入功能已移至浏览器扩展中实现，请使用扩展的 Options 页面进行批量导入操作
+              </p>
+            </div>
           </div>
         </div>
       </SettingsSection>

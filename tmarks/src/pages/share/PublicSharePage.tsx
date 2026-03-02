@@ -179,7 +179,7 @@ export function PublicSharePage() {
           return new Date(b.updated_at).getTime() - new Date(a.updated_at).getTime()
         case 'pinned':
           if (a.is_pinned !== b.is_pinned) {
-            return Number(b.is_pinned) - Number(a.is_pinned)
+            return (b.is_pinned ? 1 : 0) - (a.is_pinned ? 1 : 0)
           }
           return new Date(b.created_at).getTime() - new Date(a.created_at).getTime()
         case 'popular':

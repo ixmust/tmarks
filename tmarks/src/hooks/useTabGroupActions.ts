@@ -120,8 +120,8 @@ export function useTabGroupActions({
 
     items.forEach((item, index) => {
       markdown += `${index + 1}. [${item.title}](${item.url})\n`
-      if (item.is_pinned === 1) markdown += `   - 📌 ${t('item.pinned')}\n`
-      if (item.is_todo === 1) markdown += `   - ✅ ${t('item.todo')}\n`
+      if (item.is_pinned) markdown += `   - 📌 ${t('item.pinned')}\n`
+      if (item.is_todo) markdown += `   - ✅ ${t('item.todo')}\n`
       markdown += '\n'
     })
 
@@ -197,8 +197,8 @@ export function useTabGroupActions({
     }
   }
 
-  const handleTogglePin = async (groupId: string, itemId: string, currentPinned: number) => {
-    const newPinned = currentPinned === 1 ? 0 : 1
+  const handleTogglePin = async (groupId: string, itemId: string, currentPinned: boolean) => {
+    const newPinned = !currentPinned
     try {
       await tabGroupsService.updateTabGroupItem(itemId, { is_pinned: newPinned })
       setTabGroups((prev) =>
@@ -213,15 +213,15 @@ export function useTabGroupActions({
             : group
         )
       )
-      success(newPinned === 1 ? t('message.pinSuccess') : t('message.unpinSuccess'))
+      success(newPinned ? t('message.pinSuccess') : t('message.unpinSuccess'))
     } catch (err) {
       logger.error('Failed to toggle pin:', err)
       showError(t('message.operationFailed'))
     }
   }
 
-  const handleToggleTodo = async (groupId: string, itemId: string, currentTodo: number) => {
-    const newTodo = currentTodo === 1 ? 0 : 1
+  const handleToggleTodo = async (groupId: string, itemId: string, currentTodo: boolean) => {
+    const newTodo = !currentTodo
     try {
       await tabGroupsService.updateTabGroupItem(itemId, { is_todo: newTodo })
       setTabGroups((prev) =>
@@ -236,7 +236,7 @@ export function useTabGroupActions({
             : group
         )
       )
-      success(newTodo === 1 ? t('message.todoSuccess') : t('message.untodoSuccess'))
+      success(newTodo ? t('message.todoSuccess') : t('message.untodoSuccess'))
     } catch (err) {
       logger.error('Failed to toggle todo:', err)
       showError(t('message.operationFailed'))

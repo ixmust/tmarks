@@ -4,22 +4,20 @@
 
 import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
-import { ArrowLeft, Download, Upload, RefreshCw } from 'lucide-react'
+import { ArrowLeft, Download, RefreshCw } from 'lucide-react'
 import { useNavigate } from 'react-router-dom'
-import { useQueryClient } from '@tanstack/react-query'
 import { ExportSection } from '../../components/import-export/ExportSection'
-import { ImportSection } from '../../components/import-export/ImportSection'
-import { BOOKMARKS_QUERY_KEY } from '../../hooks/useBookmarks'
-import { TAGS_QUERY_KEY } from '../../hooks/useTags'
-import type { ExportFormat, ExportOptions, ImportResult } from '@shared/import-export-types'
+// 注意：批量导入功能已移至浏览器扩展（Tab）中实现
+// import { ImportSection } from '../../components/import-export/ImportSection'
+import type { ExportFormat, ExportOptions } from '@shared/import-export-types'
 
 export function ImportExportPage() {
   const { t } = useTranslation('import')
   const navigate = useNavigate()
-  const queryClient = useQueryClient()
-  const [activeTab, setActiveTab] = useState<'export' | 'import'>('export')
+  // 移除导入标签页，只保留导出
+  // const [activeTab, setActiveTab] = useState<'export' | 'import'>('export')
   const [lastOperation, setLastOperation] = useState<{
-    type: 'export' | 'import'
+    type: 'export'
     timestamp: string
     details: string
   } | null>(null)
@@ -34,32 +32,8 @@ export function ImportExportPage() {
     })
   }
 
-  const handleImportComplete = (result: ImportResult) => {
-    const failed = result.failed > 0 ? t('page.failedCount', { count: result.failed }) : ''
-    setLastOperation({
-      type: 'import',
-      timestamp: new Date().toLocaleString(),
-      details: t('page.importDetails', { success: result.success, tags: result.created_tags.length, failed })
-    })
-
-    queryClient.invalidateQueries({ queryKey: [BOOKMARKS_QUERY_KEY] })
-    queryClient.invalidateQueries({ queryKey: [TAGS_QUERY_KEY] })
-  }
-
-  const tabs = [
-    {
-      id: 'export' as const,
-      label: t('page.exportTab'),
-      icon: Download,
-      description: t('page.exportDesc')
-    },
-    {
-      id: 'import' as const,
-      label: t('page.importTab'),
-      icon: Upload,
-      description: t('page.importDesc')
-    }
-  ]
+  // 移除导入完成处理函数
+  // const handleImportComplete = (result: ImportResult) => { ... }
 
   return (
     <div className="min-h-screen bg-background pb-16 sm:pb-0">
@@ -88,7 +62,7 @@ export function ImportExportPage() {
               <div className="hidden md:flex items-center space-x-2 text-sm text-muted-foreground">
                 <RefreshCw className="h-4 w-4" />
                 <span>
-                  {t('page.recentOperation')}: {lastOperation.type === 'export' ? t('page.exportOperation') : t('page.importOperation')}
+                  {t('page.recentOperation')}: {t('page.exportOperation')}
                   ({lastOperation.timestamp})
                 </span>
               </div>
@@ -99,52 +73,28 @@ export function ImportExportPage() {
 
       {/* 主要内容 */}
       <div className="max-w-4xl mx-auto px-3 sm:px-6 lg:px-8 py-4 sm:py-8">
-        {/* 选项卡导航 */}
+        {/* 页面说明 */}
         <div className="mb-4 sm:mb-6 md:mb-8">
-          <div className="border-b border-border">
-            <nav className="-mb-px flex space-x-2 sm:space-x-6 md:space-x-8 overflow-x-auto scrollbar-hide">
-              {tabs.map((tab) => {
-                const Icon = tab.icon
-                return (
-                  <button
-                    key={tab.id}
-                    onClick={() => setActiveTab(tab.id)}
-                    className={`group inline-flex items-center py-3 sm:py-4 px-3 sm:px-2 md:px-1 border-b-2 font-medium whitespace-nowrap touch-manipulation transition-colors duration-200 ${
-                      activeTab === tab.id
-                        ? 'border-primary text-primary'
-                        : 'border-transparent text-muted-foreground hover:text-foreground hover:border-muted'
-                    }`}
-                  >
-                    <Icon className={`mr-2 h-4 w-4 sm:h-5 sm:w-5 flex-shrink-0 ${
-                      activeTab === tab.id
-                        ? 'text-primary'
-                        : 'text-muted-foreground group-hover:text-foreground'
-                    }`} />
-                    <span className="text-sm sm:text-base font-medium">{tab.label}</span>
-                  </button>
-                )
-              })}
-            </nav>
-          </div>
-
-          {/* 选项卡描述 */}
-          <div className="mt-2 sm:mt-3 md:mt-4 px-1">
+          <div className="px-1">
+            <h2 className="text-base sm:text-lg font-semibold text-foreground mb-2">
+              {t('page.exportTab')}
+            </h2>
             <p className="text-xs sm:text-sm text-muted-foreground leading-relaxed">
-              {tabs.find(tab => tab.id === activeTab)?.description}
+              {t('page.exportDesc')}
             </p>
+            {/* 导入功能提示 */}
+            <div className="mt-3 p-3 bg-blue-50 dark:bg-blue-950/20 border border-blue-200 dark:border-blue-800 rounded-lg">
+              <p className="text-xs sm:text-sm text-blue-700 dark:text-blue-300">
+                💡 批量导入功能已移至浏览器扩展中实现，请使用扩展的 Options 页面进行批量导入操作
+              </p>
+            </div>
           </div>
         </div>
 
         {/* 内容区域 */}
         <div className="card shadow-float">
           <div className="p-4 sm:p-6">
-            {activeTab === 'export' && (
-              <ExportSection onExport={handleExportComplete} />
-            )}
-
-            {activeTab === 'import' && (
-              <ImportSection onImport={handleImportComplete} />
-            )}
+            <ExportSection onExport={handleExportComplete} />
           </div>
         </div>
 
@@ -156,21 +106,13 @@ export function ImportExportPage() {
                 {t('page.recentOperation')}
               </h3>
               <div className="flex items-start space-x-3">
-                <div className={`flex-shrink-0 w-8 h-8 sm:w-8 sm:h-8 rounded-full flex items-center justify-center ${
-                  lastOperation.type === 'export'
-                    ? 'bg-primary/10 text-primary'
-                    : 'bg-success/10 text-success'
-                }`}>
-                  {lastOperation.type === 'export' ? (
-                    <Download className="h-4 w-4" />
-                  ) : (
-                    <Upload className="h-4 w-4" />
-                  )}
+                <div className="flex-shrink-0 w-8 h-8 sm:w-8 sm:h-8 rounded-full flex items-center justify-center bg-primary/10 text-primary">
+                  <Download className="h-4 w-4" />
                 </div>
                 <div className="flex-1 min-w-0">
                   <div className="flex flex-col sm:flex-row sm:items-center sm:space-x-2">
                     <span className="font-medium text-foreground text-sm sm:text-base">
-                      {lastOperation.type === 'export' ? t('page.dataExport') : t('page.dataImport')}
+                      {t('page.dataExport')}
                     </span>
                     <span className="text-xs sm:text-sm text-muted-foreground mt-1 sm:mt-0">
                       {lastOperation.timestamp}
@@ -213,35 +155,6 @@ export function ImportExportPage() {
                   <div className="flex items-start space-x-2">
                     <span className="w-1 h-1 bg-primary rounded-full mt-2 flex-shrink-0"></span>
                     <span className="text-xs sm:text-sm text-muted-foreground leading-relaxed">{t('help.exportTip4')}</span>
-                  </div>
-                </div>
-              </div>
-
-              <div className="space-y-2">
-                <h4 className="text-sm font-semibold text-foreground flex items-center">
-                  <span className="w-2 h-2 bg-success rounded-full mr-2 flex-shrink-0"></span>
-                  {t('help.importTitle')}
-                </h4>
-                <div className="ml-4 space-y-1.5">
-                  <div className="flex items-start space-x-2">
-                    <span className="w-1 h-1 bg-success rounded-full mt-2 flex-shrink-0"></span>
-                    <span className="text-xs sm:text-sm text-muted-foreground leading-relaxed">{t('help.importTip1')}</span>
-                  </div>
-                  <div className="flex items-start space-x-2">
-                    <span className="w-1 h-1 bg-success rounded-full mt-2 flex-shrink-0"></span>
-                    <span className="text-xs sm:text-sm text-muted-foreground leading-relaxed">{t('help.importTip2')}</span>
-                  </div>
-                  <div className="flex items-start space-x-2">
-                    <span className="w-1 h-1 bg-success rounded-full mt-2 flex-shrink-0"></span>
-                    <span className="text-xs sm:text-sm text-muted-foreground leading-relaxed">{t('help.importTip3')}</span>
-                  </div>
-                  <div className="flex items-start space-x-2">
-                    <span className="w-1 h-1 bg-success rounded-full mt-2 flex-shrink-0"></span>
-                    <span className="text-xs sm:text-sm text-muted-foreground leading-relaxed">{t('help.importTip4')}</span>
-                  </div>
-                  <div className="flex items-start space-x-2">
-                    <span className="w-1 h-1 bg-success rounded-full mt-2 flex-shrink-0"></span>
-                    <span className="text-xs sm:text-sm text-muted-foreground leading-relaxed">{t('help.importTip5')}</span>
                   </div>
                 </div>
               </div>

@@ -1,0 +1,1169 @@
+{
+  "extName": {
+    "message": "AI Bookmark Assistant",
+    "description": "Extension name"
+  },
+  "extDescription": {
+    "message": "Smart bookmark management tool with AI tag recommendations",
+    "description": "Extension description"
+  },
+  "settings_language": { "message": "Language", "description": "Language settings section" },
+  "settings_language_select": { "message": "Interface Language", "description": "Language select label" },
+  "settings_language_hint": { "message": "Page will refresh after changing language", "description": "Language hint" },
+  "popup_title": {
+    "message": "AI Tag Assistant",
+    "description": "Popup title"
+  },
+  "popup_open_settings": {
+    "message": "Open Settings",
+    "description": "Open settings"
+  },
+  "popup_save_bookmark": {
+    "message": "Save Bookmark",
+    "description": "Save bookmark"
+  },
+  "popup_save_bookmark_desc": {
+    "message": "Generate AI tags for the current page and save to bookmark library",
+    "description": "Save bookmark description"
+  },
+  "popup_ai_recommend": {
+    "message": "AI Recommend",
+    "description": "AI recommend badge"
+  },
+  "popup_smart_tags": {
+    "message": "Smart Tags",
+    "description": "Smart tags badge"
+  },
+  "popup_cloud_sync": {
+    "message": "Cloud Sync",
+    "description": "Cloud sync badge"
+  },
+  "popup_save_to_newtab": {
+    "message": "Save to NewTab",
+    "description": "Save to NewTab"
+  },
+  "popup_save_to_newtab_desc": {
+    "message": "Save current page to browser bookmarks (NewTab bi-directional sync)",
+    "description": "Save to NewTab description"
+  },
+  "popup_folder": {
+    "message": "Folder",
+    "description": "Folder badge"
+  },
+  "popup_bookmark_bar": {
+    "message": "Bookmark Bar",
+    "description": "Bookmark bar badge"
+  },
+  "popup_local_sync": {
+    "message": "Local Sync",
+    "description": "Local sync badge"
+  },
+  "popup_collect_tabs": {
+    "message": "Collect Tabs",
+    "description": "Collect tabs"
+  },
+  "popup_collect_tabs_desc": {
+    "message": "One-click collect all tabs in current window, free up memory",
+    "description": "Collect tabs description"
+  },
+  "popup_batch_collect": {
+    "message": "Batch Collect",
+    "description": "Batch collect badge"
+  },
+  "popup_one_click_restore": {
+    "message": "One-Click Restore",
+    "description": "One click restore badge"
+  },
+  "popup_save_memory": {
+    "message": "Save Memory",
+    "description": "Save memory badge"
+  },
+  "popup_tips": {
+    "message": "Tips",
+    "description": "Tips"
+  },
+  "popup_tip_bookmark": {
+    "message": "Save Bookmark: Best for important pages, supports AI smart tags",
+    "description": "Bookmark tip"
+  },
+  "popup_tip_newtab": {
+    "message": "Save to NewTab: Quick save to browser bookmarks, bi-directional sync with NewTab",
+    "description": "NewTab tip"
+  },
+  "popup_tip_collect": {
+    "message": "Collect Tabs: Best for temporarily saving many tabs, similar to OneTab",
+    "description": "Collect tip"
+  },
+  "popup_my_bookmarks": {
+    "message": "My Bookmarks",
+    "description": "My bookmarks"
+  },
+  "popup_my_collections": {
+    "message": "My Collections",
+    "description": "My collections"
+  },
+  "bookmark_exists_title": {
+    "message": "Bookmark Exists",
+    "description": "Bookmark exists dialog title"
+  },
+  "bookmark_exists_desc": {
+    "message": "This URL has already been saved. You can choose from the following actions",
+    "description": "Bookmark exists dialog description"
+  },
+  "label_title": {
+    "message": "Title",
+    "description": "Title label"
+  },
+  "label_created_at": {
+    "message": "Created",
+    "description": "Created at label"
+  },
+  "label_description": {
+    "message": "Description",
+    "description": "Description label"
+  },
+  "label_existing_tags": {
+    "message": "Existing Tags",
+    "description": "Existing tags label"
+  },
+  "label_new_tags_detected": {
+    "message": "New Tags Detected",
+    "description": "New tags detected label"
+  },
+  "label_select_action": {
+    "message": "Select an action:",
+    "description": "Select action label"
+  },
+  "snapshot_count": {
+    "message": "$count$ snapshots",
+    "description": "Snapshot count",
+    "placeholders": {
+      "count": { "content": "$1", "example": "3" }
+    }
+  },
+  "no_snapshot": {
+    "message": "No snapshots",
+    "description": "No snapshot"
+  },
+  "view_snapshot": {
+    "message": "View Snapshots",
+    "description": "View snapshot button"
+  },
+  "action_create_snapshot": {
+    "message": "Create Snapshot",
+    "description": "Create snapshot action"
+  },
+  "action_create_snapshot_desc": {
+    "message": "Save a snapshot of the current page for this bookmark",
+    "description": "Create snapshot action description"
+  },
+  "action_add_tags": {
+    "message": "Add New Tags",
+    "description": "Add tags action"
+  },
+  "action_add_tags_desc": {
+    "message": "Add new tags to the existing bookmark",
+    "description": "Add tags action description"
+  },
+  "action_update_desc": {
+    "message": "Update Description",
+    "description": "Update description action"
+  },
+  "action_update_desc_desc": {
+    "message": "Modify the bookmark description",
+    "description": "Update description action description"
+  },
+  "placeholder_new_desc": {
+    "message": "Enter new description...",
+    "description": "New description placeholder"
+  },
+  "btn_cancel": {
+    "message": "Cancel",
+    "description": "Cancel button"
+  },
+  "btn_confirm": {
+    "message": "Confirm",
+    "description": "Confirm button"
+  },
+  "btn_confirm_collect": {
+    "message": "Confirm Collect",
+    "description": "Confirm collect button"
+  },
+  "btn_processing": {
+    "message": "Processing...",
+    "description": "Processing button"
+  },
+  "btn_creating": {
+    "message": "Creating...",
+    "description": "Creating button"
+  },
+  "btn_retry": {
+    "message": "Retry",
+    "description": "Retry button"
+  },
+  "btn_save": {
+    "message": "Save Settings",
+    "description": "Save settings button"
+  },
+  "btn_saving": {
+    "message": "Saving...",
+    "description": "Saving button"
+  },
+  "btn_reset": {
+    "message": "Reset Settings",
+    "description": "Reset settings button"
+  },
+  "msg_capturing": {
+    "message": "Capturing page content...",
+    "description": "Capturing message"
+  },
+  "msg_snapshot_success": {
+    "message": "Snapshot created successfully!",
+    "description": "Snapshot success message"
+  },
+  "msg_snapshot_failed": {
+    "message": "Failed to create snapshot",
+    "description": "Snapshot failed message"
+  },
+  "msg_updating_tags": {
+    "message": "Updating tags...",
+    "description": "Updating tags message"
+  },
+  "msg_tags_success": {
+    "message": "Tags updated successfully!",
+    "description": "Tags success message"
+  },
+  "msg_tags_failed": {
+    "message": "Failed to update tags",
+    "description": "Tags failed message"
+  },
+  "msg_updating_desc": {
+    "message": "Updating description...",
+    "description": "Updating description message"
+  },
+  "msg_desc_success": {
+    "message": "Description updated successfully!",
+    "description": "Description success message"
+  },
+  "msg_desc_failed": {
+    "message": "Failed to update description",
+    "description": "Description failed message"
+  },
+  "collection_title": {
+    "message": "Collect Tabs",
+    "description": "Collection dialog title"
+  },
+  "collection_selected": {
+    "message": "$count$ tabs selected",
+    "description": "Collection selected count",
+    "placeholders": {
+      "count": { "content": "$1", "example": "5" }
+    }
+  },
+  "collection_create_group": {
+    "message": "Create New Group",
+    "description": "Create new group"
+  },
+  "collection_create_group_desc": {
+    "message": "Save selected tabs as a new group",
+    "description": "Create new group description"
+  },
+  "collection_add_to_existing": {
+    "message": "Add to Existing Group",
+    "description": "Add to existing group"
+  },
+  "collection_add_to_existing_desc": {
+    "message": "Add tabs to an existing group",
+    "description": "Add to existing group description"
+  },
+  "collection_add_to_folder": {
+    "message": "Add to Folder",
+    "description": "Add to folder"
+  },
+  "collection_add_to_folder_desc": {
+    "message": "Create new group under a folder",
+    "description": "Add to folder description"
+  },
+  "collection_group_name_optional": {
+    "message": "Group Name (Optional)",
+    "description": "Group name optional"
+  },
+  "collection_select_target_group": {
+    "message": "Select Target Group",
+    "description": "Select target group"
+  },
+  "collection_select_folder": {
+    "message": "Select Folder",
+    "description": "Select folder"
+  },
+  "collection_folder_name": {
+    "message": "Folder Name",
+    "description": "Folder name"
+  },
+  "collection_new_group_name_optional": {
+    "message": "New Group Name (Optional)",
+    "description": "New group name optional"
+  },
+  "collection_no_groups": {
+    "message": "No groups available",
+    "description": "No groups available"
+  },
+  "collection_no_groups_hint": {
+    "message": "Please create a group first",
+    "description": "No groups hint"
+  },
+  "collection_no_folders": {
+    "message": "No folders available",
+    "description": "No folders available"
+  },
+  "collection_new_folder": {
+    "message": "+ New Folder",
+    "description": "New folder option"
+  },
+  "placeholder_group_name": {
+    "message": "Leave empty to auto-generate timestamp name",
+    "description": "Group name placeholder"
+  },
+  "placeholder_folder_name": {
+    "message": "Enter folder name",
+    "description": "Folder name placeholder"
+  },
+  "alert_select_group": {
+    "message": "Please select a group",
+    "description": "Alert select group"
+  },
+  "alert_enter_folder_name": {
+    "message": "Please enter a folder name",
+    "description": "Alert enter folder name"
+  },
+  "alert_create_folder_unavailable": {
+    "message": "Create folder feature is unavailable",
+    "description": "Alert create folder unavailable"
+  },
+  "alert_create_folder_failed": {
+    "message": "Failed to create folder: $error$",
+    "description": "Alert create folder failed",
+    "placeholders": {
+      "error": { "content": "$1", "example": "Network error" }
+    }
+  },
+  "alert_select_folder": {
+    "message": "Please select a folder",
+    "description": "Alert select folder"
+  },
+  "error_unknown": {
+    "message": "Unknown error",
+    "description": "Unknown error"
+  },
+  "loading": {
+    "message": "Loading...",
+    "description": "Loading"
+  },
+  "error_occurred": {
+    "message": "An error occurred",
+    "description": "Error occurred"
+  },
+  "success": {
+    "message": "Success",
+    "description": "Success"
+  },
+  "group_item_count": {
+    "message": "$count$ items",
+    "description": "Group item count",
+    "placeholders": {
+      "count": { "content": "$1", "example": "5" }
+    }
+  },
+  "options_title": {
+    "message": "Settings",
+    "description": "Options page title"
+  },
+  "options_subtitle": {
+    "message": "Personalize Your Bookmark Assistant",
+    "description": "Options page subtitle"
+  },
+  "options_description": {
+    "message": "Manage AI integration, sync strategies, and server configuration for a smooth knowledge collection experience.",
+    "description": "Options page description"
+  },
+  "options_global_hint": {
+    "message": "These settings affect the entire extension (Popup, NewTab, Background)",
+    "description": "Global settings hint"
+  },
+  "options_tag_ai": {
+    "message": "AI Tags",
+    "description": "AI tag badge"
+  },
+  "options_tag_sync": {
+    "message": "Multi-device Sync",
+    "description": "Multi-device sync badge"
+  },
+  "options_tag_security": {
+    "message": "Security Config",
+    "description": "Security config badge"
+  },
+  "options_tab_tmarks_manage": {
+    "message": "TMarks",
+    "description": "TMarks management tab"
+  },
+  "options_tab_newtab_manage": {
+    "message": "NewTab",
+    "description": "NewTab management tab"
+  },
+  "options_tab_import": {
+    "message": "Import",
+    "description": "Import bookmarks tab"
+  },
+  "options_tab_ai": {
+    "message": "AI Config",
+    "description": "AI config tab"
+  },
+  "options_tab_preferences": {
+    "message": "Preferences",
+    "description": "Preferences tab"
+  },
+  "options_tab_tmarks": {
+    "message": "Sync Settings",
+    "description": "Sync settings tab"
+  },
+  "options_save_sync": {
+    "message": "Save & Sync",
+    "description": "Save and sync section"
+  },
+  "newtab_settings_hint": {
+    "message": "These settings only affect the new tab page display",
+    "description": "NewTab settings hint"
+  },
+  "newtab_settings_advanced": {
+    "message": "Advanced Settings",
+    "description": "Advanced settings button"
+  },
+  "newtab_add_shortcut": {
+    "message": "Add Shortcut",
+    "description": "Add shortcut"
+  },
+  "newtab_add_folder": {
+    "message": "Add Folder",
+    "description": "Add folder"
+  },
+  "newtab_batch_edit": {
+    "message": "Batch Edit",
+    "description": "Batch edit"
+  },
+  "newtab_prev": {
+    "message": "Previous",
+    "description": "Previous"
+  },
+  "newtab_next": {
+    "message": "Next",
+    "description": "Next"
+  },
+  "greeting_morning": {
+    "message": "Good Morning",
+    "description": "Morning greeting"
+  },
+  "greeting_noon": {
+    "message": "Good Afternoon",
+    "description": "Noon greeting"
+  },
+  "greeting_afternoon": {
+    "message": "Good Afternoon",
+    "description": "Afternoon greeting"
+  },
+  "greeting_evening": {
+    "message": "Good Evening",
+    "description": "Evening greeting"
+  },
+  "greeting_night": {
+    "message": "Good Night",
+    "description": "Night greeting"
+  },
+  "weekday_0": { "message": "Sunday", "description": "Sunday" },
+  "weekday_1": { "message": "Monday", "description": "Monday" },
+  "weekday_2": { "message": "Tuesday", "description": "Tuesday" },
+  "weekday_3": { "message": "Wednesday", "description": "Wednesday" },
+  "weekday_4": { "message": "Thursday", "description": "Thursday" },
+  "weekday_5": { "message": "Friday", "description": "Friday" },
+  "weekday_6": { "message": "Saturday", "description": "Saturday" },
+  "popup_back": { "message": "Back", "description": "Back button" },
+  "popup_recommend_count": { "message": "Recommend $count$", "description": "Recommend count", "placeholders": { "count": { "content": "$1" } } },
+  "popup_ai_off": { "message": "AI Off", "description": "AI off badge" },
+  "popup_selected_count": { "message": "Selected $count$", "description": "Selected count", "placeholders": { "count": { "content": "$1" } } },
+  "popup_library_count": { "message": "Library $count$", "description": "Library count", "placeholders": { "count": { "content": "$1" } } },
+  "popup_ai_recommending": { "message": "AI Recommending...", "description": "AI recommending" },
+  "popup_use_ai_recommend": { "message": "Use AI Folder Recommendation", "description": "Use AI recommend folder" },
+  "popup_ai_recommend_hint": { "message": "Automatically recommend the best folder when saving", "description": "AI recommend hint" },
+  "popup_saving": { "message": "Saving", "description": "Saving" },
+  "popup_selected": { "message": "Selected", "description": "Selected" },
+  "popup_default": { "message": "Default", "description": "Default" },
+  "popup_ai_analyzing": { "message": "AI is analyzing the current page, please wait...", "description": "AI analyzing" },
+  "popup_ai_disabled_title": { "message": "AI Recommendations Disabled", "description": "AI disabled title" },
+  "popup_ai_disabled_desc": { "message": "Please select tags from the library below, or enable AI recommendations in settings.", "description": "AI disabled description" },
+  "popup_selected_tags": { "message": "Selected Tags", "description": "Selected tags" },
+  "popup_click_to_remove": { "message": "Click tags to deselect.", "description": "Click to remove hint" },
+  "popup_apply": { "message": "Apply", "description": "Apply button" },
+  "popup_go_settings": { "message": "Go to Settings", "description": "Go to settings" },
+  "popup_welcome": { "message": "Welcome to AI Bookmark Assistant", "description": "Welcome message" },
+  "popup_welcome_desc": { "message": "Complete basic configuration to generate smart tags and category suggestions for any webpage.", "description": "Welcome description" },
+  "popup_required_info": { "message": "Required Information", "description": "Required info" },
+  "popup_required_info_desc": { "message": "Prepare the following three configurations, and the assistant can start working immediately:", "description": "Required info description" },
+  "popup_config_ai_key": { "message": "AI Service API Key", "description": "AI API Key config" },
+  "popup_config_site_url": { "message": "Bookmark Site API URL", "description": "Site API URL config" },
+  "popup_config_site_key": { "message": "Bookmark Site API Key", "description": "Site API Key config" },
+  "error_select_tag": { "message": "Please select at least one tag", "description": "Select tag error" },
+  "error_no_page_info": { "message": "Failed to get page information", "description": "No page info error" },
+  "error_save_failed": { "message": "Save failed", "description": "Save failed error" },
+  "error_init_failed": { "message": "Initialization failed", "description": "Initialization failed error" },
+  "msg_ai_recommending_folder": { "message": "AI is recommending NewTab folder...", "description": "AI recommending folder" },
+  "msg_saving_to_newtab": { "message": "Saving to NewTab...", "description": "Saving to NewTab" },
+  "msg_saved_to": { "message": "Saved to $path$", "description": "Saved to path", "placeholders": { "path": { "content": "$1" } } },
+  "notification_saved": { "message": "\"$title$\" saved to $path$", "description": "Notification saved", "placeholders": { "title": { "content": "$1" }, "path": { "content": "$2" } } },
+  "placeholder_custom_title": { "message": "Enter custom title and press Enter or click Apply", "description": "Custom title placeholder" },
+  "placeholder_custom_desc": { "message": "Enter custom description and press Ctrl+Enter or click Apply", "description": "Custom description placeholder" },
+  "tooltip_public": { "message": "Public (click to switch to private)", "description": "Public tooltip" },
+  "tooltip_private": { "message": "Private (click to switch to public)", "description": "Private tooltip" },
+  "tooltip_include_thumbnail": { "message": "Include thumbnail (click to remove)", "description": "Include thumbnail tooltip" },
+  "tooltip_no_thumbnail": { "message": "No thumbnail (click to add)", "description": "No thumbnail tooltip" },
+  "tooltip_create_snapshot": { "message": "Create snapshot (click to cancel)", "description": "Create snapshot tooltip" },
+  "tooltip_no_snapshot": { "message": "No snapshot (click to create)", "description": "No snapshot tooltip" },
+  "tooltip_edit_title_expand": { "message": "Edit title (click to expand)", "description": "Edit title expand tooltip" },
+  "tooltip_edit_title_collapse": { "message": "Edit title (click to collapse)", "description": "Edit title collapse tooltip" },
+  "tooltip_edit_desc_expand": { "message": "Edit description (click to expand)", "description": "Edit desc expand tooltip" },
+  "tooltip_edit_desc_collapse": { "message": "Edit description (click to collapse)", "description": "Edit desc collapse tooltip" },
+  "tab_collection_total": { "message": "$count$ total", "description": "Total tabs count", "placeholders": { "count": { "content": "$1" } } },
+  "tab_collection_selected": { "message": "$count$ selected", "description": "Selected tabs count", "placeholders": { "count": { "content": "$1" } } },
+  "tab_collection_loading": { "message": "Loading tabs...", "description": "Loading tabs" },
+  "tab_collection_load_failed": { "message": "Failed to load tabs", "description": "Load tabs failed" },
+  "tab_collection_load_groups_failed": { "message": "Failed to load groups", "description": "Load groups failed" },
+  "tab_collection_create_folder_failed": { "message": "Failed to create folder", "description": "Create folder failed" },
+  "tab_collection_select_at_least_one": { "message": "Please select at least one tab", "description": "Select at least one tab" },
+  "tab_collection_success": { "message": "Collection successful", "description": "Collection success" },
+  "tab_collection_failed": { "message": "Collection failed", "description": "Collection failed" },
+  "tab_collection_close_tabs_failed": { "message": "Failed to close tabs", "description": "Close tabs failed" },
+  "tab_collection_collected_count": { "message": "Successfully collected $count$ tabs. Close these tabs?", "description": "Collected tabs count", "placeholders": { "count": { "content": "$1" } } },
+  "tab_collection_keep_tabs": { "message": "Keep Tabs", "description": "Keep tabs" },
+  "tab_collection_close_tabs": { "message": "Close Tabs", "description": "Close tabs" },
+  "tab_collection_select_all": { "message": "Select All", "description": "Select all" },
+  "tab_collection_deselect_all": { "message": "Deselect All", "description": "Deselect all" },
+  "tab_collection_options": { "message": "Options", "description": "Options" },
+  "tab_collection_collect": { "message": "Collect", "description": "Collect" },
+  "tab_collection_collecting": { "message": "Collecting", "description": "Collecting" },
+  "newtab_context_add_shortcut": { "message": "Add Shortcut", "description": "Add shortcut context menu" },
+  "newtab_context_add_folder": { "message": "Add Folder", "description": "Add folder context menu" },
+  "newtab_context_batch_edit": { "message": "Batch Edit", "description": "Batch edit context menu" },
+  "tag_library": { "message": "Tag Library", "description": "Tag library" },
+  "tag_library_desc": { "message": "Synced with your historical tag data, click to add.", "description": "Tag library description" },
+  "tag_new": { "message": "NEW", "description": "New tag indicator" },
+  "ai_recommend_title": { "message": "AI Recommend", "description": "AI recommend title" },
+  "ai_recommend_desc": { "message": "Generated in real-time based on page content, click to select.", "description": "AI recommend description" },
+  "no_tags": { "message": "No tags", "description": "No tags" },
+  "add_tag": { "message": "Add", "description": "Add tag button" },
+  "placeholder_add_tag": { "message": "Enter tag name and press Enter to add", "description": "Add tag placeholder" },
+  "last_save_duration": { "message": "Last save took $duration$s", "description": "Last save duration", "placeholders": { "duration": { "content": "$1" } } },
+  "error_load_folders": { "message": "Failed to load folders", "description": "Load folders failed" },
+  "msg_settings_saved": { "message": "Settings saved!", "description": "Settings saved message" },
+  "msg_config_applied": { "message": "Applied and saved config \"$name$\"", "description": "Config applied and saved message", "placeholders": { "name": { "content": "$1" } } },
+  "msg_preset_saved": { "message": "Saved as \"$name$\"", "description": "Preset saved message", "placeholders": { "name": { "content": "$1" } } },
+  "preset_default_name": { "message": "Config $num$", "description": "Default preset name", "placeholders": { "num": { "content": "$1" } } },
+  "msg_tabs_added_to_group": { "message": "Successfully added $count$ tabs to existing group", "description": "Tabs added to group", "placeholders": { "count": { "content": "$1" } } },
+  "msg_tabs_collected": { "message": "Successfully collected $count$ tabs$mode$", "description": "Tabs collected", "placeholders": { "count": { "content": "$1" }, "mode": { "content": "$2" } } },
+  "msg_tabs_offline_saved": { "message": "Network unavailable, saved $count$ tabs offline, will sync when network recovers", "description": "Tabs offline saved", "placeholders": { "count": { "content": "$1" } } },
+  "error_fetch_models": { "message": "Failed to fetch model list ($status$): $error$", "description": "Fetch models failed", "placeholders": { "status": { "content": "$1" }, "error": { "content": "$2" } } },
+  "error_partial_delete": { "message": "Some bookmarks failed to delete: $errors$", "description": "Partial delete failed", "placeholders": { "errors": { "content": "$1" } } },
+  "msg_retry": { "message": "Retry $type$ ($attempt$)", "description": "Retry message", "placeholders": { "type": { "content": "$1" }, "attempt": { "content": "$2" } } },
+  "never_synced": { "message": "Never synced", "description": "Never synced" },
+  "confirm_reset": { "message": "Are you sure you want to reset all settings? This action cannot be undone.", "description": "Confirm reset" },
+  "msg_settings_reset": { "message": "Settings reset", "description": "Settings reset message" },
+  "error_api_key_required": { "message": "Please fill in API Key before saving", "description": "API key required error" },
+  "error_preset_name_required": { "message": "Preset name cannot be empty", "description": "Preset name required error" },
+  "error_config_not_loaded": { "message": "Config not loaded, please try again later", "description": "Config not loaded error" },
+  "error_save_preset_failed": { "message": "Failed to save preset", "description": "Save preset failed" },
+  "error_provider_unknown": { "message": "Cannot determine AI provider for this config", "description": "Provider unknown error" },
+  "msg_connection_deleted": { "message": "Saved connection deleted", "description": "Connection deleted message" },
+  "error_delete_connection_failed": { "message": "Failed to delete connection", "description": "Delete connection failed" },
+  "error_no_tabs_to_collect": { "message": "No tabs to collect in current window", "description": "No tabs to collect" },
+  "msg_to_folder": { "message": " to folder", "description": "To folder suffix" },
+  "error_model_list_invalid": { "message": "Invalid model list response format", "description": "Model list invalid" },
+  "error_model_list_empty": { "message": "Model list is empty", "description": "Model list empty" },
+  "error_provider_not_supported": { "message": "Current AI service does not support automatic model list fetching", "description": "Provider not supported" },
+  "error_missing_api_key": { "message": "Missing API Key", "description": "Missing API key" },
+  "error_missing_api_url": { "message": "Missing API URL", "description": "Missing API URL" },
+  "root_folder": { "message": "Root", "description": "Root folder" },
+  "placeholder_bookmark_title": { "message": "Enter bookmark title", "description": "Bookmark title placeholder" },
+  "no_url": { "message": "No URL available", "description": "No URL" },
+  "tooltip_back_to_root": { "message": "Back to root", "description": "Back to root tooltip" },
+  "tooltip_refresh_folders": { "message": "Refresh folders", "description": "Refresh folders tooltip" },
+  "onboarding_ai_key_desc": { "message": "Model credentials for generating smart tags, supports multiple providers.", "description": "AI key description" },
+  "onboarding_site_url_desc": { "message": "Points to your bookmark service endpoint, defaults to TMarks official address.", "description": "Site URL description" },
+  "onboarding_site_key_desc": { "message": "For syncing and saving bookmark data, generate key in service console.", "description": "Site key description" },
+  "onboarding_tip_1": { "message": "Save multiple API and model combinations in settings, switch scenarios with one click.", "description": "Onboarding tip 1" },
+  "onboarding_tip_2": { "message": "Support custom Prompt to meet different tag styles or language needs.", "description": "Onboarding tip 2" },
+  "onboarding_tip_3": { "message": "After configuration, the assistant will automatically capture the current tab and generate recommendations.", "description": "Onboarding tip 3" },
+  "tooltip_click_remove_tag": { "message": "Click to remove tag", "description": "Click to remove tag tooltip" },
+  "newtab_save_title": { "message": "Save to NewTab", "description": "Save to NewTab title" },
+  "newtab_save_desc": { "message": "Select a folder to save, or use AI recommendation.", "description": "Save to NewTab description" },
+  "newtab_ai_recommending": { "message": "AI Recommending...", "description": "AI recommending folders" },
+  "newtab_ai_recommend_folder": { "message": "AI Recommend Folder", "description": "AI recommend folder button" },
+  "newtab_refresh_folders": { "message": "Refresh Folders", "description": "Refresh folders button" },
+  "newtab_ai_recommend_title": { "message": "AI Recommended Folders", "description": "AI recommend folders title" },
+  "newtab_select_folder": { "message": "Select Folder", "description": "Select folder title" },
+  "newtab_click_to_enter": { "message": "Click to enter", "description": "Click to enter hint" },
+  "newtab_enter": { "message": "Enter", "description": "Enter folder" },
+  "newtab_no_subfolders": { "message": "No subfolders at this level", "description": "No subfolders" },
+  "options_tmarks_tag_title": { "message": "TMarks Tag Recommendation", "description": "TMarks tag section title" },
+  "options_tmarks_tag_desc": { "message": "Configure TMarks tag recommendation (generate tags when saving bookmarks).", "description": "TMarks tag section description" },
+  "options_enable_ai_tag": { "message": "Enable AI Tag Recommendation", "description": "Enable AI tag recommendation" },
+  "options_enable_ai_tag_desc": { "message": "When enabled, AI will analyze pages and recommend tags when saving bookmarks.", "description": "Enable AI tag description" },
+  "options_max_tags": { "message": "Max Recommended Tags", "description": "Max recommended tags" },
+  "options_max_tags_range": { "message": "Range 1-10.", "description": "Max tags range hint" },
+  "options_tmarks_prompt": { "message": "TMarks Tag Prompt", "description": "TMarks tag prompt" },
+  "options_enabled": { "message": "Enabled", "description": "Enabled" },
+  "options_disabled": { "message": "Disabled", "description": "Disabled" },
+  "options_custom_prompt_placeholder": { "message": "Custom AI prompt...", "description": "Custom prompt placeholder" },
+  "options_example_prompt": { "message": "💡 Example Prompt:", "description": "Example prompt title" },
+  "options_use_example": { "message": "Use Example", "description": "Use this example" },
+  "options_copy_example": { "message": "Copy Example", "description": "Copy example" },
+  "options_example_copied": { "message": "Example prompt copied to clipboard", "description": "Example copied message" },
+  "options_save_config": { "message": "Save Current Config", "description": "Save current config" },
+  "options_save_config_desc": { "message": "Enter a memorable name for current AI settings.", "description": "Save config description" },
+  "options_config_name": { "message": "Config Name", "description": "Config name label" },
+  "options_config_name_placeholder": { "message": "e.g., Production Config", "description": "Config name placeholder" },
+  "options_sync_title": { "message": "Sync Settings", "description": "Sync settings title" },
+  "options_sync_desc": { "message": "Configure sync server (TMarks) to sync bookmarks and tag data.", "description": "Sync settings description" },
+  "options_recommended": { "message": "Recommended", "description": "Recommended badge" },
+  "options_server_address": { "message": "Server Address", "description": "Server address label" },
+  "options_tmarks_official": { "message": "TMarks Official:", "description": "TMarks official address" },
+  "options_tmarks_info_title": { "message": "ℹ️ About TMarks:", "description": "TMarks info title" },
+  "options_tmarks_info_1": { "message": "TMarks is a tag-based bookmark navigator", "description": "TMarks info 1" },
+  "options_tmarks_info_2": { "message": "Supports multi-device sync, tag management, full-text search", "description": "TMarks info 2" },
+  "options_tmarks_info_3": { "message": "Just enter base URL, system will auto-complete /api path", "description": "TMarks info 3" },
+  "options_tmarks_info_4": { "message": "Example:", "description": "TMarks info example" },
+  "options_api_key": { "message": "API Key", "description": "API Key label" },
+  "options_api_key_placeholder": { "message": "Enter TMarks API Key", "description": "API Key placeholder" },
+  "options_api_key_hint": { "message": "Generate API Key in TMarks settings", "description": "API Key hint" },
+  "options_cache_title": { "message": "Cache Status", "description": "Cache status title" },
+  "options_cache_desc": { "message": "View local cache overview and manually trigger sync.", "description": "Cache status description" },
+  "options_tags_count": { "message": "Tags", "description": "Tags count" },
+  "options_bookmarks_count": { "message": "Bookmarks", "description": "Bookmarks count" },
+  "options_last_sync": { "message": "Last Sync", "description": "Last sync" },
+  "options_sync_now": { "message": "Sync Now", "description": "Sync now button" },
+  "options_syncing": { "message": "Syncing...", "description": "Syncing" },
+  "options_newtab_folder_title": { "message": "NewTab Folder Recommendation", "description": "NewTab folder recommendation title" },
+  "options_newtab_folder_desc": { "message": "Configure AI folder recommendation for Popup \"Save to NewTab\".", "description": "NewTab folder description" },
+  "options_newtab_root_hint": { "message": "NewTab root is fixed to bookmark bar folder: TMarks.", "description": "NewTab root hint" },
+  "options_newtab_ai_organize_hint": { "message": "\"AI Organize\" will create backup and generate organized bookmark structure within this root.", "description": "AI organize hint" },
+  "options_enable_newtab_ai": { "message": "Enable NewTab Folder AI Recommendation", "description": "Enable NewTab AI" },
+  "options_enable_newtab_ai_desc": { "message": "When enabled, AI can recommend folders when saving to NewTab.", "description": "Enable NewTab AI description" },
+  "options_recommend_count": { "message": "Recommend Folder Count", "description": "Recommend folder count" },
+  "options_recommend_count_hint": { "message": "Number of AI recommended candidate folders (1-20)", "description": "Recommend count hint" },
+  "options_custom_prompt": { "message": "Custom Prompt", "description": "Custom prompt" },
+  "options_prompt_variables": { "message": "Available variables", "description": "Available variables" },
+  "options_load_paths": { "message": "Load Candidate Paths", "description": "Load candidate paths" },
+  "options_loading_paths": { "message": "Loading...", "description": "Loading paths" },
+  "options_paths_loaded": { "message": "Loaded $count$ candidate paths:", "description": "Paths loaded", "placeholders": { "count": { "content": "$1" } } },
+  "options_more_paths": { "message": "...$count$ more", "description": "More paths", "placeholders": { "count": { "content": "$1" } } },
+  "options_load_paths_success": { "message": "Candidate paths loaded successfully", "description": "Load paths success" },
+  "options_load_paths_failed": { "message": "Failed to load candidate paths", "description": "Load paths failed" },
+  "options_chrome_runtime_error": { "message": "chrome.runtime not supported in current environment", "description": "Chrome runtime error" },
+  "options_close": { "message": "Close", "description": "Close button" },
+  "provider_openai": { "message": "OpenAI", "description": "OpenAI provider" },
+  "provider_claude": { "message": "Claude", "description": "Claude provider" },
+  "provider_deepseek": { "message": "DeepSeek", "description": "DeepSeek provider" },
+  "provider_zhipu": { "message": "Zhipu AI", "description": "Zhipu AI provider" },
+  "provider_modelscope": { "message": "ModelScope", "description": "ModelScope provider" },
+  "provider_siliconflow": { "message": "SiliconFlow", "description": "SiliconFlow provider" },
+  "provider_iflow": { "message": "iFlytek Spark", "description": "iFlytek Spark provider" },
+  "provider_custom": { "message": "Custom", "description": "Custom provider" },
+  "search_engine_zhihu": { "message": "Zhihu", "description": "Zhihu search engine" },
+  "hot_search_baidu": { "message": "Baidu Hot", "description": "Baidu hot search" },
+  "hot_search_weibo": { "message": "Weibo Hot", "description": "Weibo hot search" },
+  "hot_search_zhihu": { "message": "Zhihu Hot", "description": "Zhihu hot list" },
+  "hot_search_bilibili": { "message": "Bilibili Hot", "description": "Bilibili hot" },
+  "options_unnamed_config": { "message": "Unnamed Config", "description": "Unnamed config" },
+  "popup_more": { "message": "Show More", "description": "Show more" },
+  "options_saved_configs": { "message": "All Saved Configs", "description": "All saved configs" },
+  "options_total_count": { "message": "$count$ total", "description": "Total count", "placeholders": { "count": { "content": "$1" } } },
+  "options_no_saved_configs": { "message": "No saved configs yet. Fill in API info and click \"Save Current Config\" to create a preset.", "description": "No saved configs" },
+  "options_use": { "message": "Apply", "description": "Apply button" },
+  "options_apply": { "message": "Apply", "description": "Apply button" },
+  "options_delete": { "message": "Delete", "description": "Delete button" },
+  "options_refresh_models": { "message": "Refresh Models", "description": "Refresh models" },
+  "options_fetching_models": { "message": "Fetching...", "description": "Fetching models" },
+  "options_model_placeholder_iflow": { "message": "spark-lite or spark-pro", "description": "iFlow model placeholder" },
+  "options_model_placeholder_custom": { "message": "Enter model name", "description": "Custom model placeholder" },
+  "options_model": { "message": "Model", "description": "Model label" },
+  "options_select_model": { "message": "Select Model", "description": "Select model" },
+  "options_models_loaded": { "message": "Loaded $count$ models, select or enter manually.", "description": "Models loaded", "placeholders": { "count": { "content": "$1" } } },
+  "options_model_load_failed": { "message": "Failed to load model list", "description": "Model load failed" },
+  "options_model_fetch_hint": { "message": "Enter API URL and Key, then refresh to get available models.", "description": "Model fetch hint" },
+  "options_api_key_placeholder_openai": { "message": "Enter OpenAI API Key", "description": "OpenAI API Key placeholder" },
+  "options_api_key_placeholder_claude": { "message": "Enter Claude API Key", "description": "Claude API Key placeholder" },
+  "options_api_key_placeholder_deepseek": { "message": "Enter DeepSeek API Key", "description": "DeepSeek API Key placeholder" },
+  "options_api_key_placeholder_zhipu": { "message": "Enter Zhipu API Key", "description": "Zhipu API Key placeholder" },
+  "options_api_key_placeholder_modelscope": { "message": "Enter ModelScope API Key", "description": "ModelScope API Key placeholder" },
+  "options_api_key_placeholder_siliconflow": { "message": "Enter SiliconFlow API Key", "description": "SiliconFlow API Key placeholder" },
+  "options_api_key_placeholder_iflow": { "message": "Enter iFlytek Spark API Key", "description": "iFlow API Key placeholder" },
+  "options_api_key_placeholder_custom": { "message": "Enter API Key", "description": "Custom API Key placeholder" },
+  "options_get_api_key": { "message": "Get API Key", "description": "Get API Key" },
+  "options_ai_config_title": { "message": "AI Configuration", "description": "AI config title" },
+  "options_ai_config_desc": { "message": "Connect your smart tag service, manage models and call strategies.", "description": "AI config description" },
+  "options_ai_engine": { "message": "AI Engine", "description": "AI engine" },
+  "options_api_url": { "message": "API URL", "description": "API URL" },
+  "options_custom_api_placeholder": { "message": "Enter custom API URL", "description": "Custom API placeholder" },
+  "options_testing": { "message": "Testing...", "description": "Testing" },
+  "options_test_connection": { "message": "Test Connection", "description": "Test connection" },
+  "options_max_import_groups": { "message": "Max Import Groups", "description": "Max import groups" },
+  "options_max_import_groups_desc": { "message": "Maximum number of groups to create when AI batch importing to NewTab (1-20)", "description": "Max import groups description" },
+  "error_network": { "message": "Network connection failed, please check network settings", "description": "Network error" },
+  "error_storage": { "message": "Storage operation failed, please retry", "description": "Storage error" },
+  "error_sync": { "message": "Sync failed, please try again later", "description": "Sync error" },
+  "error_bookmark": { "message": "Bookmark operation failed", "description": "Bookmark error" },
+  "error_unknown_operation": { "message": "Operation failed, please retry", "description": "Unknown operation error" },
+  "error_sync_failed": { "message": "Sync failed", "description": "Sync failed" },
+  "error_sync_delete_failed": { "message": "Sync delete failed", "description": "Sync delete failed" },
+  "error_sync_update_failed": { "message": "Sync update failed", "description": "Sync update failed" },
+  "error_load_config": { "message": "Failed to load configuration", "description": "Load config failed" },
+  "error_save_config": { "message": "Failed to save configuration", "description": "Save config failed" },
+  "error_extract_page_info": { "message": "Failed to extract page info", "description": "Extract page info failed" },
+  "error_recommend_tags": { "message": "Failed to recommend tags", "description": "Recommend tags failed" },
+  "error_ai_recommend_fallback": { "message": "AI recommendation failed, using local tags. You can retry.", "description": "AI recommend fallback" },
+  "error_ai_recommend_fallback_with_msg": { "message": "AI recommendation failed: $msg$. Using local tags, you can retry.", "description": "AI recommend fallback with message", "placeholders": { "msg": { "content": "$1" } } },
+  "error_ai_recommend_failed": { "message": "AI recommendation failed", "description": "AI recommend failed" },
+  "error_create_snapshot": { "message": "Failed to create snapshot", "description": "Create snapshot failed" },
+  "error_sync_cache": { "message": "Failed to sync cache", "description": "Sync cache failed" },
+  "error_save_bookmark_with_time": { "message": "$error$ ($time$s)", "description": "Save bookmark error with time", "placeholders": { "error": { "content": "$1" }, "time": { "content": "$2" } } },
+  "msg_ai_recommend_complete": { "message": "🎯 AI recommendation complete ($time$s)", "description": "AI recommend complete", "placeholders": { "time": { "content": "$1" } } },
+  "msg_cache_synced": { "message": "Cache synced successfully!", "description": "Cache synced successfully" },
+  "default_folder_name": { "message": "Folder", "description": "Default folder name" },
+  "default_untitled": { "message": "Untitled", "description": "Default untitled name" },
+  "none": { "message": "None", "description": "None placeholder" },
+  "default_shortcut_name": { "message": "Shortcut", "description": "Default shortcut name" },
+  "default_new_folder": { "message": "New Folder", "description": "Default new folder name" },
+  "widget_settings": { "message": "Settings", "description": "Widget settings" },
+  "widget_size": { "message": "Widget Size", "description": "Widget size" },
+  "widget_size_small": { "message": "Small (1×1)", "description": "Small size" },
+  "widget_size_wide": { "message": "Wide (2×1)", "description": "Wide size" },
+  "widget_size_tall": { "message": "Tall (1×2)", "description": "Tall size" },
+  "widget_size_medium": { "message": "Medium (2×2)", "description": "Medium size" },
+  "widget_size_large": { "message": "Large (2×3)", "description": "Large size" },
+  "widget_size_xlarge": { "message": "X-Large (2×4)", "description": "X-Large size" },
+  "widget_delete": { "message": "Delete Widget", "description": "Delete widget" },
+  "widget_show_date": { "message": "Show Date", "description": "Show date" },
+  "widget_show_seconds": { "message": "Show Seconds", "description": "Show seconds" },
+  "widget_show_lunar": { "message": "Show Lunar", "description": "Show lunar calendar" },
+  "widget_time_format": { "message": "Time Format", "description": "Time format" },
+  "widget_24h": { "message": "24-hour", "description": "24-hour format" },
+  "widget_12h": { "message": "12-hour", "description": "12-hour format" },
+  "widget_temp_unit": { "message": "Temperature Unit", "description": "Temperature unit" },
+  "widget_celsius": { "message": "Celsius (°C)", "description": "Celsius" },
+  "widget_fahrenheit": { "message": "Fahrenheit (°F)", "description": "Fahrenheit" },
+  "widget_show_completed": { "message": "Show Completed", "description": "Show completed" },
+  "widget_weather_forecast": { "message": "Forecast", "description": "Weather forecast" },
+  "widget_weather_city_placeholder": { "message": "Enter city name", "description": "City placeholder" },
+  "widget_weather_fetch_failed": { "message": "Failed to fetch weather", "description": "Weather fetch failed" },
+  "widget_weather_unknown": { "message": "Unknown", "description": "Unknown weather" },
+  "widget_todo_title": { "message": "Todo", "description": "Todo title" },
+  "widget_todo_hide": { "message": "Hide", "description": "Hide completed" },
+  "widget_todo_completed": { "message": "completed", "description": "Completed" },
+  "widget_todo_placeholder": { "message": "Add todo...", "description": "Todo placeholder" },
+  "widget_todo_more": { "message": "$count$ more...", "description": "More todos", "placeholders": { "count": { "content": "$1" } } },
+  "widget_poetry_refresh": { "message": "Refresh", "description": "Refresh poetry" },
+  "widget_notes_title": { "message": "Notes", "description": "Notes title" },
+  "widget_notes_placeholder": { "message": "Write something...", "description": "Notes placeholder" },
+  "empty_default": { "message": "No content", "description": "Empty default" },
+  "empty_search": { "message": "No results found", "description": "Empty search" },
+  "empty_bookmark": { "message": "No bookmarks", "description": "Empty bookmark" },
+  "empty_todo": { "message": "No todos", "description": "Empty todo" },
+  "empty_notes": { "message": "No notes", "description": "Empty notes" },
+  "empty_hotsearch": { "message": "No data", "description": "Empty hotsearch" },
+  "newtab_folder_action": { "message": "Folder Action", "description": "Folder action" },
+  "newtab_drag_to": { "message": "Dragged \"$1$\" to \"$2$\"", "description": "Drag to", "placeholders": { "1": { "content": "$1" }, "2": { "content": "$2" } } },
+  "newtab_merge_folders": { "message": "Merge Folders", "description": "Merge folders" },
+  "newtab_move_to_folder": { "message": "Move to Folder", "description": "Move to folder" },
+  "newtab_create_folder": { "message": "Create Folder", "description": "Create folder" },
+  "newtab_merge_to_folder": { "message": "Merge to Folder", "description": "Merge to folder" },
+  "newtab_reorder_only": { "message": "Reorder Only", "description": "Reorder only" },
+  "newtab_edit_done": { "message": "Done", "description": "Done editing" },
+  "newtab_edit_layout": { "message": "Edit Layout", "description": "Edit layout" },
+  "newtab_select_all_group": { "message": "Select All in Group", "description": "Select all in group" },
+  "newtab_deselect_all_group": { "message": "Deselect All in Group", "description": "Deselect all in group" },
+  "newtab_refresh_weather": { "message": "Refresh Weather", "description": "Refresh weather" },
+  "newtab_image_info": { "message": "Image Info", "description": "Image info" },
+  "newtab_refresh_wallpaper": { "message": "Refresh Wallpaper", "description": "Refresh wallpaper" },
+  "ui_delete": { "message": "Delete", "description": "Delete" },
+  "api_test_success": { "message": "API test successful! Returned $count$ tags: $tags$", "description": "API test success", "placeholders": { "count": { "content": "$1" }, "tags": { "content": "$2" } } },
+  "api_test_failed": { "message": "API test failed", "description": "API test failed" },
+  "modal_new_folder": { "message": "New Folder", "description": "New folder modal title" },
+  "placeholder_folder_name": { "message": "Folder name", "description": "Folder name placeholder" },
+  "modal_add_shortcut": { "message": "Add Shortcut", "description": "Add shortcut modal title" },
+  "modal_add_shortcut_to": { "message": "to $name$", "description": "Add shortcut to group", "placeholders": { "name": { "content": "$1" } } },
+  "label_url": { "message": "URL", "description": "URL label" },
+  "label_name": { "message": "Name", "description": "Name label" },
+  "label_optional": { "message": "(optional)", "description": "Optional label" },
+  "placeholder_auto_domain": { "message": "Auto-detect from domain", "description": "Auto get domain placeholder" },
+  "error_enter_url": { "message": "Please enter a URL", "description": "Please enter URL error" },
+  "error_invalid_url": { "message": "Invalid URL format", "description": "Invalid URL format error" },
+  "btn_add": { "message": "Add", "description": "Add button" },
+  "btn_create": { "message": "Create", "description": "Create button" },
+  "btn_add_shortcut": { "message": "Add Shortcut", "description": "Add shortcut button" },
+  "btn_add_folder": { "message": "Add Folder", "description": "Add folder button" },
+  "btn_import": { "message": "Import", "description": "Import button" },
+  "btn_export": { "message": "Export", "description": "Export button" },
+  "btn_batch_edit": { "message": "Batch Edit", "description": "Batch edit button" },
+  "btn_edit_mode": { "message": "Edit Mode", "description": "Edit mode button" },
+  "btn_exit_edit": { "message": "Exit Edit", "description": "Exit edit mode button" },
+  "widget_shortcut": { "message": "Shortcut", "description": "Shortcut widget name" },
+  "widget_shortcut_desc": { "message": "Website shortcut", "description": "Shortcut widget description" },
+  "widget_folder": { "message": "Folder", "description": "Folder widget name" },
+  "widget_folder_desc": { "message": "Organize bookmarks and shortcuts", "description": "Folder widget description" },
+  "widget_weather": { "message": "Weather", "description": "Weather widget name" },
+  "widget_weather_desc": { "message": "Show current weather and forecast", "description": "Weather widget description" },
+  "widget_clock": { "message": "Clock", "description": "Clock widget name" },
+  "widget_clock_desc": { "message": "Display current time", "description": "Clock widget description" },
+  "widget_todo": { "message": "Todo", "description": "Todo widget name" },
+  "widget_todo_desc": { "message": "Manage todo tasks", "description": "Todo widget description" },
+  "widget_notes": { "message": "Notes", "description": "Notes widget name" },
+  "widget_notes_desc": { "message": "Quick notes", "description": "Notes widget description" },
+  "widget_hotsearch": { "message": "Hot Search", "description": "Hot search widget name" },
+  "widget_hotsearch_desc": { "message": "Show trending searches", "description": "Hot search widget description" },
+  "widget_poetry": { "message": "Daily Poetry", "description": "Poetry widget name" },
+  "widget_poetry_desc": { "message": "Show daily poetry", "description": "Poetry widget description" },
+  "group_home": { "message": "Home", "description": "Home group name" },
+  "error_auth_failed": { "message": "Authentication failed: API Key is invalid or expired, please check your TMarks API Key in settings", "description": "Auth failed error" },
+  "error_permission_denied": { "message": "Permission denied: Your API Key does not have permission to save collections", "description": "Permission denied error" },
+  "error_rate_limit": { "message": "Too many requests, please try again later", "description": "Rate limit error" },
+  "error_ai_rate_limit": { "message": "AI service is congested/rate limited (429). Please try again later, or switch to another model/provider.", "description": "AI rate limit error" },
+  "error_server_error": { "message": "TMarks server error, please try again later", "description": "Server error" },
+  "error_save_collection_failed": { "message": "Failed to save collection", "description": "Save collection failed" },
+  "error_collect_tabs_failed": { "message": "Failed to collect tabs", "description": "Collect tabs failed" },
+  "error_tab_group_empty": { "message": "Tab group is empty", "description": "Tab group empty error" },
+  "error_select_one_tag": { "message": "Please select at least one tag", "description": "Select one tag error" },
+  "error_bookmark_exists": { "message": "Bookmark already exists", "description": "Bookmark exists error" },
+  "msg_offline_saved": { "message": "Network unavailable, saved locally, will sync when network recovers", "description": "Offline saved message" },
+  "msg_bookmark_offline_saved": { "message": "Bookmark saved offline", "description": "Bookmark offline saved" },
+  "msg_snapshot_created": { "message": "Snapshot created", "description": "Snapshot created message" },
+  "msg_tags_updated": { "message": "Tags updated successfully", "description": "Tags updated message" },
+  "msg_desc_updated": { "message": "Description updated successfully", "description": "Description updated message" },
+  "msg_capturing_page": { "message": "Capturing page content...", "description": "Capturing page message" },
+  "error_update_tags_failed": { "message": "Failed to update tags", "description": "Update tags failed" },
+  "error_update_desc_failed": { "message": "Failed to update description", "description": "Update description failed" },
+  "error_custom_ai_url_required": { "message": "Custom AI requires API URL configuration", "description": "Custom AI URL required" },
+  "error_network_error": { "message": "Network error: Cannot connect to TMarks server, please check your network connection", "description": "Network error" },
+  "error_save_bookmark_failed": { "message": "Failed to save bookmark", "description": "Save bookmark failed" },
+  "error_permission_save_bookmark": { "message": "Permission denied: Your API Key does not have permission to save bookmarks", "description": "Permission save bookmark error" },
+  "msg_bookmark_exists_snapshot": { "message": "Bookmark already exists, created new snapshot for it", "description": "Bookmark exists snapshot message" },
+  "wallpaper_copyright": { "message": "Copyright", "description": "Wallpaper copyright label" },
+  "settings_general": { "message": "General", "description": "General settings tab" },
+  "ui_action": { "message": "Action", "description": "Action label" },
+  "settings_appearance": { "message": "Appearance", "description": "Appearance settings tab" },
+  "settings_sync": { "message": "Sync", "description": "Sync settings tab" },
+  "settings_ai": { "message": "AI Organize", "description": "AI organize settings tab" },
+  "pref_appearance_title": { "message": "Appearance Settings", "description": "Appearance settings title" },
+  "pref_appearance_desc": { "message": "Configure extension theme and style.", "description": "Appearance settings description" },
+  "pref_theme": { "message": "Theme", "description": "Theme label" },
+  "pref_theme_auto": { "message": "Auto", "description": "Auto theme" },
+  "pref_theme_light": { "message": "Light", "description": "Light theme" },
+  "pref_theme_dark": { "message": "Dark", "description": "Dark theme" },
+  "pref_theme_hint": { "message": "Control extension light/dark mode.", "description": "Theme hint" },
+  "pref_theme_style": { "message": "Theme Style", "description": "Theme style label" },
+  "pref_style_default": { "message": "Default", "description": "Default style" },
+  "pref_style_bw": { "message": "B&W", "description": "Black and white style" },
+  "pref_style_hint": { "message": "Switch extension color scheme.", "description": "Style hint" },
+  "pref_tag_style": { "message": "Tag Style", "description": "Tag style label" },
+  "pref_tag_classic": { "message": "Classic", "description": "Classic tag style" },
+  "pref_tag_mono": { "message": "Text Only", "description": "Text only tag style" },
+  "pref_tag_hint": { "message": "Tag display style in popup.", "description": "Tag style hint" },
+  "pref_defaults_title": { "message": "Save Defaults", "description": "Save defaults title" },
+  "pref_defaults_desc": { "message": "Configure default options when saving bookmarks.", "description": "Save defaults description" },
+  "pref_thumbnail": { "message": "Include Thumbnail by Default", "description": "Include thumbnail label" },
+  "pref_thumbnail_hint": { "message": "Whether to include page thumbnail when saving.", "description": "Thumbnail hint" },
+  "pref_snapshot": { "message": "Create Snapshot by Default", "description": "Create snapshot label" },
+  "pref_snapshot_hint": { "message": "Whether to create webpage snapshot when saving.", "description": "Snapshot hint" },
+  "pref_public": { "message": "Public by Default", "description": "Public by default label" },
+  "pref_public_hint": { "message": "Whether bookmarks are public by default when saving.", "description": "Public hint" },
+  "sidebar_new_group": { "message": "New Group", "description": "New group button" },
+  "sidebar_edit_group": { "message": "Edit Group", "description": "Edit group button" },
+  "sidebar_group_name": { "message": "Group Name", "description": "Group name placeholder" },
+  "sidebar_tmarks": { "message": "TMarks Bookmarks", "description": "TMarks bookmarks" },
+  "sidebar_bookmark_manage": { "message": "Bookmark Manager", "description": "Bookmark manager" },
+  "sidebar_delete_group": { "message": "Delete Group", "description": "Delete group title" },
+  "sidebar_delete_group_with_content": { "message": "All content in this group will be deleted. Are you sure?", "description": "Delete group with content message" },
+  "sidebar_delete_group_move_home": { "message": "Shortcuts in this group will be moved to Home. Are you sure?", "description": "Delete group move to home message" },
+  "sidebar_delete_synced_group_with_items": { "message": "Deleting group \"$1\" will also delete all $2 bookmarks in it (because it's linked to a browser bookmark folder). This action cannot be undone!", "description": "Delete synced group with items message" },
+  "sidebar_delete_group_move_items": { "message": "After deleting group \"$1\", all $2 bookmarks will be moved to Home. Folder structure will be preserved.", "description": "Delete group move items to home message" },
+  "widget_selector_title": { "message": "Add Widget", "description": "Widget selector title" },
+  "widget_selector_hint": { "message": "Select a widget type to add to current group", "description": "Widget selector hint" },
+  "empty_group": { "message": "No content in this group", "description": "Empty group message" },
+  "search_bookmark_placeholder": { "message": "Search bookmarks...", "description": "Search bookmark placeholder" },
+  "search_engine_placeholder": { "message": "Search in $engine$...", "description": "Search engine placeholder", "placeholders": { "engine": { "content": "$1" } } },
+  "switch_to_search_engine": { "message": "Switch to search engine", "description": "Switch to search engine" },
+  "switch_to_bookmark_search": { "message": "Switch to bookmark search", "description": "Switch to bookmark search" },
+  "source_shortcut": { "message": "Shortcut", "description": "Source shortcut" },
+  "source_bookmark": { "message": "Bookmark", "description": "Source bookmark" },
+  "pin_to_newtab": { "message": "Pin to NewTab", "description": "Pin to NewTab" },
+  "dock_drag_sort_hint": { "message": "Drag to sort | Double-click to sync", "description": "Dock drag sort hint" },
+  "wallpaper_date": { "message": "Date", "description": "Wallpaper date label" },
+  "settings_personalization": { "message": "Personalization", "description": "Personalization section" },
+  "settings_show_greeting": { "message": "Show Greeting", "description": "Show greeting" },
+  "settings_your_name": { "message": "Your Name", "description": "Your name" },
+  "settings_optional": { "message": "Optional", "description": "Optional" },
+  "settings_clock": { "message": "Clock", "description": "Clock section" },
+  "settings_show_clock": { "message": "Show Clock", "description": "Show clock" },
+  "settings_show_date": { "message": "Show Date", "description": "Show date" },
+  "settings_show_seconds": { "message": "Show Seconds", "description": "Show seconds" },
+  "settings_show_lunar": { "message": "Show Lunar Calendar", "description": "Show lunar" },
+  "settings_time_format": { "message": "Time Format", "description": "Time format" },
+  "settings_24h": { "message": "24-hour", "description": "24-hour format" },
+  "settings_12h": { "message": "12-hour", "description": "12-hour format" },
+  "settings_poetry": { "message": "Poetry", "description": "Poetry section" },
+  "settings_show_poetry": { "message": "Show Daily Poetry", "description": "Show daily poetry" },
+  "settings_search": { "message": "Search", "description": "Search section" },
+  "settings_show_search": { "message": "Show Search Box", "description": "Show search box" },
+  "settings_search_engine": { "message": "Search Engine", "description": "Search engine" },
+  "settings_offline_cache": { "message": "Offline Cache", "description": "Offline cache section" },
+  "settings_usage_guide": { "message": "Usage Guide", "description": "Usage guide section" },
+  "settings_guide_1": { "message": "1. In edit mode, double-click a folder to enter it.", "description": "Guide 1" },
+  "settings_guide_2": { "message": "2. Scroll switch: Use scroll wheel in left/right 30% area to switch groups, middle 40% area to switch pages.", "description": "Guide 2" },
+  "settings_guide_3": { "message": "3. When there are too many icons in a group, scroll in the icon area to page left/right.", "description": "Guide 3" },
+  "settings_shortcuts": { "message": "Shortcuts", "description": "Shortcuts section" },
+  "settings_show_shortcuts": { "message": "Show Shortcuts", "description": "Show shortcuts" },
+  "settings_per_row": { "message": "Per Row", "description": "Per row count" },
+  "settings_count_items": { "message": "$count$ items", "description": "Count items", "placeholders": { "count": { "content": "$1" } } },
+  "settings_style": { "message": "Style", "description": "Style" },
+  "settings_style_icon": { "message": "Icon", "description": "Icon style" },
+  "settings_style_card": { "message": "Card", "description": "Card style" },
+  "settings_wallpaper": { "message": "Wallpaper", "description": "Wallpaper section" },
+  "settings_wallpaper_type": { "message": "Wallpaper Type", "description": "Wallpaper type" },
+  "settings_wallpaper_color": { "message": "Solid Color", "description": "Solid color" },
+  "settings_wallpaper_bing": { "message": "Bing Daily Wallpaper", "description": "Bing daily wallpaper" },
+  "settings_wallpaper_unsplash": { "message": "Random Landscape", "description": "Random landscape" },
+  "settings_wallpaper_custom": { "message": "Custom Image", "description": "Custom image" },
+  "settings_bg_color": { "message": "Background Color", "description": "Background color" },
+  "settings_history_image": { "message": "History Image", "description": "History image" },
+  "settings_today": { "message": "Today", "description": "Today" },
+  "settings_yesterday": { "message": "Yesterday", "description": "Yesterday" },
+  "settings_days_ago": { "message": "$count$ days ago", "description": "Days ago", "placeholders": { "count": { "content": "$1" } } },
+  "settings_show_image_info": { "message": "Show Image Info", "description": "Show image info" },
+  "settings_image_url": { "message": "Image URL", "description": "Image URL" },
+  "settings_blur": { "message": "Blur", "description": "Blur" },
+  "settings_brightness": { "message": "Brightness", "description": "Brightness" },
+  "settings_tmarks_sync": { "message": "TMarks Sync", "description": "TMarks sync section" },
+  "settings_show_pinned_bookmarks": { "message": "Show Pinned Bookmarks", "description": "Show pinned bookmarks" },
+  "settings_search_suggestions": { "message": "Search Suggestions", "description": "Search suggestions" },
+  "settings_open_tmarks": { "message": "Open TMarks Website", "description": "Open TMarks website" },
+  "settings_api_key_hint": { "message": "Configure API Key in extension settings to enable sync", "description": "API key hint" },
+  "settings_auto_refresh": { "message": "Auto Refresh", "description": "Auto refresh section" },
+  "settings_auto_refresh_pinned": { "message": "Auto Refresh Pinned Bookmarks", "description": "Auto refresh pinned bookmarks" },
+  "settings_refresh_time": { "message": "Refresh Time", "description": "Refresh time" },
+  "settings_morning_8": { "message": "Morning 8:00", "description": "Morning 8:00" },
+  "settings_evening_22": { "message": "Evening 22:00", "description": "Evening 22:00" },
+  "settings_auto_refresh_hint": { "message": "Auto update pinned bookmarks cache daily to keep data fresh", "description": "Auto refresh hint" },
+  "settings_ai_organize": { "message": "AI Organize", "description": "AI organize section" },
+  "settings_enable_ai_organize": { "message": "Enable AI Organize", "description": "Enable AI organize" },
+  "settings_custom_rules": { "message": "Custom Rules (Optional)", "description": "Custom rules optional" },
+  "settings_custom_rules_placeholder": { "message": "Example:\nWork: github.com, jira., notion.so\nLearning: coursera.org, edx.org\nEntertainment: bilibili.com, youtube.com\nTools: translate.google.com, regex101.com", "description": "Custom rules placeholder" },
+  "settings_custom_rules_hint": { "message": "Rules are given highest priority to AI. Original paths are referenced when tags unavailable.", "description": "Custom rules hint" },
+  "settings_custom_prompt": { "message": "Advanced: Custom Prompt Template", "description": "Custom prompt template" },
+  "settings_enabled": { "message": "Enabled", "description": "Enabled" },
+  "settings_disabled": { "message": "Disabled", "description": "Disabled" },
+  "settings_prompt_variables_hint": { "message": "Available variables: {{rules}} {{domainSummariesJson}}", "description": "Prompt variables hint" },
+  "settings_use_default_template": { "message": "Use Default Template", "description": "Use default template" },
+  "settings_clear": { "message": "Clear", "description": "Clear" },
+  "settings_prompt_json_hint": { "message": "Recommend keeping 'JSON only' constraint to avoid parsing failures.", "description": "Prompt JSON hint" },
+  "settings_domain_limit": { "message": "Domain Limit", "description": "Domain limit" },
+  "settings_top_level_count": { "message": "Expected Top-Level Categories", "description": "Top level count" },
+  "settings_domain_limit_hint": { "message": "To avoid oversized AI prompts, this limits domains in classification (top N by bookmark count). Organizing still applies to all bookmarks.", "description": "Domain limit hint" },
+  "settings_batch_hint": { "message": "When domains exceed limit, they're split into batches; AI logs will show 'split into batches, output after all received'.", "description": "Batch hint" },
+  "settings_top_level_hint": { "message": "Recommend 2-7 top-level categories. AI will try to match your setting, merging excess groups.", "description": "Top level hint" },
+  "settings_history_heat": { "message": "Read Browser History Heat", "description": "Read browser history heat" },
+  "settings_history_days": { "message": "History Days", "description": "History days" },
+  "settings_history_top_n": { "message": "History Heat Top N", "description": "History heat top N" },
+  "settings_history_heat_hint_1": { "message": "When enabled, analyzes recent N days of browsing to evaluate domain heat for directory hierarchy.", "description": "History heat hint 1" },
+  "settings_history_heat_hint_2": { "message": "Top N domains are highlighted in prompt; AI prioritizes them in top-level or homepage (default 20, range 5-100).", "description": "History heat hint 2" },
+  "settings_hierarchy_strategy": { "message": "Hierarchy Strategy", "description": "Hierarchy strategy" },
+  "settings_strict_hierarchy": { "message": "Strict: Use Existing Structure (merge/split/rename only)", "description": "Strict hierarchy" },
+  "settings_strict_hierarchy_hint": { "message": "When enabled, AI can only fine-tune existing hierarchy, no new top-level directories.", "description": "Strict hierarchy hint" },
+  "settings_allow_new_folders": { "message": "Allow New Folders (disabled in strict mode)", "description": "Allow new folders" },
+  "settings_allow_new_folders_hint": { "message": "When disabled, AI can only place domains in existing directories.", "description": "Allow new folders hint" },
+  "settings_prefer_original_paths": { "message": "Prefer Original Domain Paths", "description": "Prefer original paths" },
+  "settings_prefer_original_paths_hint": { "message": "When enabled, AI tries to keep domains in their historical directories, adjusting only on conflicts.", "description": "Prefer original paths hint" },
+  "settings_verbose_logs": { "message": "Verbose Logs", "description": "Verbose logs" },
+  "settings_verbose_logs_hint": { "message": "When disabled, only key steps logged; enabled shows all progress for debugging.", "description": "Verbose logs hint" },
+  "settings_organizing": { "message": "Organizing...", "description": "Organizing" },
+  "settings_start_ai_organize": { "message": "Start AI Organize Workspace", "description": "Start AI organize workspace" },
+  "settings_view_terminal": { "message": "View Progress Terminal", "description": "View progress terminal" },
+  "settings_ai_organize_warning": { "message": "Organizing only copies/rebuilds structure within 'TMarks' workspace, won't modify other browser folders. Backup manually if needed.", "description": "AI organize warning" },
+  "settings_ai_terminal": { "message": "AI Organize Terminal", "description": "AI organize terminal" },
+  "settings_auto_scroll": { "message": "Auto Scroll", "description": "Auto scroll" },
+  "settings_no_logs": { "message": "No logs", "description": "No logs" },
+  "settings_copy_logs": { "message": "Copy Logs", "description": "Copy logs" },
+  "settings_task_started": { "message": "Task started, waiting for background progress...", "description": "Task started" },
+  "settings_organize_complete": { "message": "Complete: processed $processed$ bookmarks$truncated$, created $folders$ folders, copied $bookmarks$ bookmarks", "description": "Organize complete", "placeholders": { "processed": { "content": "$1" }, "truncated": { "content": "$2" }, "folders": { "content": "$3" }, "bookmarks": { "content": "$4" } } },
+  "settings_truncated": { "message": " (truncated)", "description": "Truncated" },
+  "settings_ai_organize_failed": { "message": "AI organize failed", "description": "AI organize failed" },
+  "settings_cache_download": { "message": "Download and cache all icons", "description": "Download and cache all icons" },
+  "settings_cache_count": { "message": "Cached $cached$ / $total$ icons", "description": "Cached count", "placeholders": { "cached": { "content": "$1" }, "total": { "content": "$2" } } },
+  "settings_storage_usage": { "message": "Storage: $used$ / $total$ ($percent$%)", "description": "Storage usage", "placeholders": { "used": { "content": "$1" }, "total": { "content": "$2" }, "percent": { "content": "$3" } } },
+  "settings_caching": { "message": "Caching...", "description": "Caching" },
+  "settings_cache_now": { "message": "Cache Now", "description": "Cache now" },
+  "settings_cache_hint": { "message": "Icons are auto-compressed to under 10KB for offline display", "description": "Cache hint" },
+  "settings_cache_success": { "message": "Successfully cached $count$ icons", "description": "Cache success", "placeholders": { "count": { "content": "$1" } } },
+  "settings_cache_failed": { "message": "Failed to cache icons, please retry", "description": "Cache failed" },
+  "batch_select_all": { "message": "Select All", "description": "Select all" },
+  "batch_deselect_all": { "message": "Deselect All", "description": "Deselect all" },
+  "batch_selected_count": { "message": "$count$ selected", "description": "Selected count", "placeholders": { "count": { "content": "$1" } } },
+  "batch_complete": { "message": "Done", "description": "Complete" },
+  "batch_select_group": { "message": "Select Group", "description": "Select group" },
+  "batch_move": { "message": "Move", "description": "Move" },
+  "batch_delete_confirm_title": { "message": "Confirm Delete", "description": "Delete confirm title" },
+  "batch_delete_confirm_message": { "message": "Are you sure you want to delete $count$ selected shortcuts? This cannot be undone.", "description": "Delete confirm message", "placeholders": { "count": { "content": "$1" } } },
+  "batch_edit_mode": { "message": "Batch Edit Mode", "description": "Batch edit mode" },
+  "batch_tip_click": { "message": "Click", "description": "Click" },
+  "batch_tip_click_desc": { "message": "Select/deselect items", "description": "Click description" },
+  "batch_tip_double_click": { "message": "Double-click Folder", "description": "Double click folder" },
+  "batch_tip_double_click_desc": { "message": "Enter folder to view contents", "description": "Double click description" },
+  "batch_tip_auto_delete": { "message": "Empty Folders Auto-delete", "description": "Auto delete empty folder" },
+  "batch_tip_auto_delete_desc": { "message": "Folders are auto-deleted when emptied (except Home)", "description": "Auto delete description" },
+  "batch_tip_dont_show": { "message": "Don't show again", "description": "Don't show again" },
+  "batch_tip_got_it": { "message": "Got it", "description": "Got it" },
+  "folder_default_name": { "message": "Folder", "description": "Default folder name" },
+  "folder_click_rename": { "message": "Click to rename", "description": "Click to rename" },
+  "folder_delete": { "message": "Delete Folder", "description": "Delete folder" },
+  "folder_empty": { "message": "Folder is empty", "description": "Folder is empty" },
+  "folder_move_up": { "message": "Move to parent ($hint$)", "description": "Move to parent", "placeholders": { "hint": { "content": "$1" } } },
+  "folder_parent_hint_up": { "message": "Parent", "description": "Parent folder hint" },
+  "folder_parent_hint_group": { "message": "Group", "description": "Group hint" },
+  "folder_parent_hint_home": { "message": "Home", "description": "Home hint" },
+  "folder_delete_title": { "message": "Delete Folder", "description": "Delete folder title" },
+  "folder_delete_message": { "message": "Choose delete method", "description": "Delete folder message" },
+  "folder_delete_keep": { "message": "Keep contents (move out)", "description": "Keep contents" },
+  "folder_delete_all": { "message": "Delete folder and all contents", "description": "Delete all" },
+  "folder_delete_confirm_title": { "message": "Confirm Delete", "description": "Confirm delete title" },
+  "folder_delete_confirm_message": { "message": "Delete folder and all contents? This cannot be undone.", "description": "Confirm delete message" },
+  "poetry_refresh": { "message": "Refresh", "description": "Refresh poetry" },
+  "greeting_with_name": { "message": "$greeting$, $name$", "description": "Greeting with name", "placeholders": { "greeting": { "content": "$1" }, "name": { "content": "$2" } } },
+  "onboarding_label": { "message": "Onboarding", "description": "Onboarding label" },
+  "loading_text": { "message": "Loading...", "description": "Loading text" },
+  "session_label": { "message": "Session", "description": "Session label" },
+  "label_url_short": { "message": "URL", "description": "URL label short" },
+  "import_title": { "message": "Batch Import Bookmarks", "description": "Import title" },
+  "import_desc": { "message": "Import bookmarks from browser export files to TMarks system", "description": "Import description" },
+  "import_select_target": { "message": "Select Import Target", "description": "Select import target" },
+  "import_select_target_desc": { "message": "Choose whether to import bookmarks to TMarks or NewTab", "description": "Select target description" },
+  "import_to_tmarks": { "message": "Import to TMarks", "description": "Import to TMarks" },
+  "import_to_tmarks_desc": { "message": "Import bookmarks to TMarks system with tag management and full-text search", "description": "Import to TMarks description" },
+  "import_tmarks_feature_1": { "message": "Tag management and full-text search", "description": "TMarks feature 1" },
+  "import_tmarks_feature_2": { "message": "AI-powered tag and description generation", "description": "TMarks feature 2" },
+  "import_tmarks_feature_3": { "message": "Multi-device sync support", "description": "TMarks feature 3" },
+  "import_to_newtab": { "message": "Import to NewTab", "description": "Import to NewTab" },
+  "import_to_newtab_desc": { "message": "Import browser bookmarks to NewTab page for quick access", "description": "Import to NewTab description" },
+  "import_newtab_feature_1": { "message": "Direct browser bookmark import", "description": "NewTab feature 1" },
+  "import_newtab_feature_2": { "message": "Preserve folder structure", "description": "NewTab feature 2" },
+  "import_newtab_feature_3": { "message": "One-click import, no file upload needed", "description": "NewTab feature 3" },
+  "import_newtab_title": { "message": "Import Browser Bookmarks to NewTab", "description": "Import NewTab title" },
+  "import_newtab_description": { "message": "Import all browser bookmarks to NewTab page while preserving folder structure", "description": "Import NewTab description" },
+  "import_newtab_info_title": { "message": "Import Instructions", "description": "Import NewTab info title" },
+  "import_newtab_info_1": { "message": "Will import all bookmarks from browser", "description": "Import NewTab info 1" },
+  "import_newtab_info_2": { "message": "Preserve original folder structure", "description": "Import NewTab info 2" },
+  "import_newtab_info_3": { "message": "Will not delete or modify browser bookmarks", "description": "Import NewTab info 3" },
+  "import_newtab_info_4": { "message": "Import process may take a few minutes", "description": "Import NewTab info 4" },
+  "import_newtab_success": { "message": "Successfully imported $count$ bookmarks", "description": "Import NewTab success", "placeholders": { "count": { "content": "$1" } } },
+  "import_newtab_failed": { "message": "Import failed", "description": "Import NewTab failed" },
+  "import_parse_empty": { "message": "No valid bookmark data found", "description": "Parse empty" },
+  "import_no_valid_urls": { "message": "No valid URLs found", "description": "No valid URLs" },
+  "import_parse_failed": { "message": "Failed to parse file, please check file format", "description": "Parse failed" },
+  "import_extracted_urls": { "message": "Extracted $count$ valid URLs", "description": "Extracted URLs", "placeholders": { "count": { "content": "$1" } } },
+  "import_result": { "message": "Import Result", "description": "Import result" },
+  "import_total": { "message": "Total", "description": "Import total" },
+  "import_success": { "message": "Success", "description": "Import success" },
+  "import_failed": { "message": "Failed", "description": "Import failed" },
+  "import_select_format": { "message": "Select Format", "description": "Select format" },
+  "import_format_html": { "message": "HTML Format", "description": "HTML format" },
+  "import_format_json": { "message": "JSON Format", "description": "JSON format" },
+  "import_format_browser": { "message": "Browser Export", "description": "Browser export" },
+  "import_format_tmarks": { "message": "TMarks Format", "description": "TMarks format" },
+  "import_select_file": { "message": "Select File", "description": "Select file" },
+  "import_drag_drop": { "message": "Drag and drop file here, or click to select", "description": "Drag and drop hint" },
+  "import_file_selected": { "message": "File Selected", "description": "File selected" },
+  "import_validating": { "message": "Validating...", "description": "Validating" },
+  "import_reselect": { "message": "Reselect", "description": "Reselect file" },
+  "import_options": { "message": "Import Options", "description": "Import options" },
+  "import_skip_duplicates": { "message": "Skip Duplicates", "description": "Skip duplicates" },
+  "import_create_tags": { "message": "Auto Create Tags", "description": "Create missing tags" },
+  "import_preserve_time": { "message": "Preserve Timestamps", "description": "Preserve timestamps" },
+  "import_folder_as_tag": { "message": "Folder as Tag", "description": "Folder as tag" },
+  "import_enable_ai": { "message": "Enable AI Organize", "description": "Enable AI organize" },
+  "import_ai_hint": { "message": "AI will generate tags and descriptions for bookmarks", "description": "AI organize hint" },
+  "import_ai_enabled": { "message": "Enabled", "description": "AI enabled" },
+  "import_ai_disabled": { "message": "Disabled", "description": "AI disabled" },
+  "import_parsed_count": { "message": "Parsed $count$ bookmarks", "description": "Parsed count", "placeholders": { "count": { "content": "$1" } } },
+  "import_progress": { "message": "Import Progress", "description": "Import progress" },
+  "import_step_navigation": { "message": "Import Step Navigation", "description": "Import step navigation" },
+  "import_step_upload": { "message": "Upload File", "description": "Upload step" },
+  "import_step_upload_desc": { "message": "Select bookmark file", "description": "Upload step description" },
+  "import_step_ai_organize": { "message": "AI Organize", "description": "AI organize step" },
+  "import_step_ai_organize_desc": { "message": "Smart categorization", "description": "AI organize step description" },
+  "import_step_edit": { "message": "Edit & Confirm", "description": "Edit step" },
+  "import_step_edit_desc": { "message": "Review and modify", "description": "Edit step description" },
+  "import_step_import": { "message": "Complete Import", "description": "Import step" },
+  "import_step_import_desc": { "message": "Import to system", "description": "Import step description" },
+  "import_parsing": { "message": "Parsing...", "description": "Parsing" },
+  "import_start": { "message": "Start Import", "description": "Start import" },
+  "import_importing": { "message": "Importing...", "description": "Importing" },
+  "import_next_step": { "message": "Next: AI Organize ($count$ bookmarks)", "description": "Next step", "placeholders": { "count": { "content": "$1" } } },
+  "import_ai_title": { "message": "AI Smart Organize", "description": "AI organize title" },
+  "import_ai_desc": { "message": "Use AI to generate tags and descriptions for bookmarks", "description": "AI organize description" },
+  "import_ai_api_key": { "message": "API Key", "description": "API Key" },
+  "import_ai_api_key_hint": { "message": "Temporary use, will not be saved", "description": "API Key hint" },
+  "import_ai_api_key_placeholder": { "message": "Enter API Key", "description": "API Key placeholder" },
+  "import_ai_api_key_required": { "message": "Please enter API Key", "description": "API Key required" },
+  "import_ai_options": { "message": "Organize Options", "description": "AI options" },
+  "import_ai_generate_tags": { "message": "Generate Tags", "description": "Generate tags" },
+  "import_ai_generate_tags_hint": { "message": "Generate 2-5 tags for each bookmark", "description": "Generate tags hint" },
+  "import_ai_generate_desc": { "message": "Generate Description", "description": "Generate description" },
+  "import_ai_generate_desc_hint": { "message": "Generate brief description for bookmarks", "description": "Generate description hint" },
+  "import_ai_normalize": { "message": "Normalize Tags", "description": "Normalize tags" },
+  "import_ai_normalize_hint": { "message": "Unify tag format and naming", "description": "Normalize hint" },
+  "import_ai_estimate": { "message": "Estimate", "description": "Estimate" },
+  "import_ai_bookmark_count": { "message": "Bookmarks", "description": "Bookmark count" },
+  "import_ai_tokens": { "message": "Tokens", "description": "Tokens" },
+  "import_ai_cost": { "message": "Cost", "description": "Cost" },
+  "import_ai_start": { "message": "Start Organize", "description": "Start AI organize" },
+  "import_ai_organizing": { "message": "Organizing...", "description": "AI organizing" },
+  "import_ai_skip": { "message": "Skip AI Organize", "description": "Skip AI" },
+  "import_ai_failed": { "message": "AI organize failed", "description": "AI organize failed" },
+  "import_preview_title": { "message": "Preview & Edit", "description": "Preview title" },
+  "import_preview_desc": { "message": "Review AI results, edit manually", "description": "Preview description" },
+  "import_preview_total": { "message": "Total Bookmarks", "description": "Total bookmarks" },
+  "import_preview_ai_tags": { "message": "AI Generated Tags", "description": "AI generated tags" },
+  "import_preview_new_tags": { "message": "New Tags", "description": "New tags" },
+  "import_preview_tokens": { "message": "Token Usage", "description": "Token usage" },
+  "import_preview_tokens_used": { "message": "Used $count$ tokens", "description": "Tokens used", "placeholders": { "count": { "content": "$1" } } },
+  "import_preview_original_tags": { "message": "Original Tags", "description": "Original tags" },
+  "import_preview_ai_generated": { "message": "AI Generated", "description": "AI generated" },
+  "import_preview_ai_desc": { "message": "AI Description", "description": "AI description" },
+  "import_preview_none": { "message": "None", "description": "None" },
+  "import_preview_edit": { "message": "Edit Tags", "description": "Edit tags" },
+  "import_preview_edit_placeholder": { "message": "Separate tags with commas", "description": "Edit placeholder" },
+  "import_preview_save": { "message": "Save", "description": "Save" },
+  "import_preview_cancel": { "message": "Cancel", "description": "Cancel" },
+  "import_preview_use_original": { "message": "Use Original Tags", "description": "Use original tags" },
+  "import_preview_more": { "message": "$count$ more not shown", "description": "More not shown", "placeholders": { "count": { "content": "$1" } } },
+  "import_preview_back": { "message": "Back", "description": "Back" },
+  "import_preview_discard": { "message": "Discard AI Result", "description": "Discard AI result" },
+  "import_preview_confirm": { "message": "Confirm Import ($count$)", "description": "Confirm import", "placeholders": { "count": { "content": "$1" } } },
+  "import_result_title": { "message": "Import Result", "description": "Import result title" },
+  "import_result_success": { "message": "Success", "description": "Success" },
+  "import_result_failed": { "message": "Failed", "description": "Failed" },
+  "import_result_skipped": { "message": "Skipped", "description": "Skipped" },
+  "import_result_total": { "message": "Total", "description": "Total" },
+  "import_result_rate": { "message": "Success Rate", "description": "Success rate" },
+  "import_result_errors": { "message": "Error Details", "description": "Errors" },
+  "import_result_view": { "message": "View Bookmarks", "description": "View bookmarks" },
+  "import_result_continue": { "message": "Continue Import", "description": "Continue import" },
+  "import_error_parse": { "message": "Failed to parse file", "description": "Parse error" },
+  "import_error_format": { "message": "Invalid file format", "description": "Format error" },
+  "import_error_empty": { "message": "No valid bookmarks found", "description": "Empty error" },
+  "import_error_network": { "message": "Network error", "description": "Network error" },
+  "import_error_unknown": { "message": "Unknown error", "description": "Unknown error" }
+}

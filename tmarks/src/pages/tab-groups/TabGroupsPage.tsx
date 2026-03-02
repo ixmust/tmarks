@@ -766,7 +766,7 @@ export function TabGroupsPage() {
       {sortedGroups.length > 0 && !searchQuery && (
         <PinnedItemsSection 
           tabGroups={sortedGroups}
-          onUnpin={(groupId, itemId) => handleTogglePin(groupId, itemId, 1)}
+          onUnpin={(groupId, itemId) => handleTogglePin(groupId, itemId, true)}
         />
       )}
 

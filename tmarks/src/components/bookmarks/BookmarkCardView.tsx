@@ -344,14 +344,14 @@ function BookmarkCard({
       {/* 内容区 */}
       <div className="flex flex-col p-4 sm:p-3 gap-2.5 sm:gap-2 relative">
         {/* 状态标识 */}
-        {(!!bookmark.is_pinned || !!bookmark.is_archived) && (
+        {(bookmark.is_pinned || bookmark.is_archived) && (
           <div className="flex gap-1.5 mb-1">
-            {!!bookmark.is_pinned && (
+            {bookmark.is_pinned && (
               <span className="bg-warning text-warning-content text-xs px-2 py-0.5 rounded-full font-medium">
                 {t('status.pinned')}
               </span>
             )}
-            {!!bookmark.is_archived && (
+            {bookmark.is_archived && (
               <span className="bg-base-content/40 text-base-100 text-xs px-2 py-0.5 rounded-full font-medium">
                 {t('status.archived')}
               </span>

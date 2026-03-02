@@ -51,11 +51,11 @@ export function TodoSidebar({ tabGroups, onUpdate }: TodoSidebarProps) {
     new Date(b.item.created_at || 0).getTime() - new Date(a.item.created_at || 0).getTime()
   )
 
-  const handleToggleTodo = async (itemId: string, currentStatus: number) => {
+  const handleToggleTodo = async (itemId: string, currentStatus: boolean) => {
     setProcessingId(itemId)
     try {
       await tabGroupsService.updateTabGroupItem(itemId, {
-        is_todo: currentStatus ? 0 : 1,
+        is_todo: !currentStatus,
       })
       success(currentStatus ? t('todo.todoUnmarked') : t('todo.todoMarked'))
       onUpdate()
@@ -175,7 +175,7 @@ export function TodoSidebar({ tabGroups, onUpdate }: TodoSidebarProps) {
         setProcessingId(itemId)
         try {
           await tabGroupsService.updateTabGroupItem(itemId, {
-            is_archived: 1,
+            is_archived: true,
           })
           success(t('todo.tabArchived'))
           onUpdate()
@@ -245,7 +245,7 @@ export function TodoSidebar({ tabGroups, onUpdate }: TodoSidebarProps) {
                 <div className="flex items-start gap-3">
                   {/* 复选框 */}
                   <button
-                    onClick={() => handleToggleTodo(item.id, item.is_todo || 0)}
+                    onClick={() => handleToggleTodo(item.id, item.is_todo || false)}
                     disabled={processingId === item.id}
                     className={`flex-shrink-0 w-6 h-6 rounded border-2 flex items-center justify-center transition-all duration-200 ${
                       processingId === item.id
@@ -358,7 +358,7 @@ export function TodoSidebar({ tabGroups, onUpdate }: TodoSidebarProps) {
                       {
                         label: item.is_todo ? t('todo.cancelTaskMark') : t('todo.markAsCompleted'),
                         icon: <CheckCircle2 className="w-4 h-4" />,
-                        onClick: () => handleToggleTodo(item.id, item.is_todo || 0),
+                        onClick: () => handleToggleTodo(item.id, item.is_todo || false),
                       },
                       {
                         label: t('todo.moveToOtherGroup'),

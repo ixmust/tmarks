@@ -17,8 +17,8 @@ interface TabItemProps {
   onItemClick: (item: TabGroupItem, e: React.MouseEvent | React.ChangeEvent<HTMLInputElement>) => void
   onEditItem: (item: TabGroupItem) => void
   onSaveEdit: (groupId: string, itemId: string) => void
-  onTogglePin: (groupId: string, itemId: string, currentPinned: number) => void
-  onToggleTodo: (groupId: string, itemId: string, currentTodo: number) => void
+  onTogglePin: (groupId: string, itemId: string, currentPinned: boolean) => void
+  onToggleTodo: (groupId: string, itemId: string, currentTodo: boolean) => void
   onDeleteItem: (groupId: string, itemId: string, title: string) => void
   onMoveItem?: (item: TabGroupItem) => void
   setEditingItemId: (id: string | null) => void
@@ -152,10 +152,10 @@ export function TabItem({
               >
                 {item.title}
               </a>
-              {item.is_pinned === 1 && (
+              {item.is_pinned && (
                 <Pin className="w-3 h-3 text-warning flex-shrink-0" />
               )}
-              {item.is_todo === 1 && (
+              {item.is_todo && (
                 <CheckSquare className="w-3 h-3 text-accent flex-shrink-0" />
               )}
             </div>
@@ -204,14 +204,14 @@ export function TabItem({
                   onClick: () => onEditItem(item),
                 },
                 {
-                  label: item.is_pinned === 1 ? t('menu.unpin') : t('menu.pin'),
+                  label: item.is_pinned ? t('menu.unpin') : t('menu.pin'),
                   icon: <Pin className="w-4 h-4" />,
-                  onClick: () => onTogglePin(groupId, item.id, item.is_pinned || 0),
+                  onClick: () => onTogglePin(groupId, item.id, item.is_pinned || false),
                 },
                 {
-                  label: item.is_todo === 1 ? t('menu.unmarkTodo') : t('menu.markTodo'),
+                  label: item.is_todo ? t('menu.unmarkTodo') : t('menu.markTodo'),
                   icon: <CheckSquare className="w-4 h-4" />,
-                  onClick: () => onToggleTodo(groupId, item.id, item.is_todo || 0),
+                  onClick: () => onToggleTodo(groupId, item.id, item.is_todo || false),
                 },
                 ...(onMoveItem ? [{
                   label: t('menu.moveToOtherGroup'),
@@ -246,24 +246,24 @@ export function TabItem({
                 <Edit2 className="w-4 h-4" />
               </button>
               <button
-                onClick={() => onTogglePin(groupId, item.id, item.is_pinned || 0)}
+                onClick={() => onTogglePin(groupId, item.id, item.is_pinned || false)}
                 className={`p-1.5 rounded transition-colors ${
-                  item.is_pinned === 1
+                  item.is_pinned
                     ? 'text-warning bg-warning/10 hover:bg-warning/20'
                     : 'text-muted-foreground hover:bg-muted'
                 }`}
-                title={item.is_pinned === 1 ? t('menu.unpin') : t('menu.pin')}
+                title={item.is_pinned ? t('menu.unpin') : t('menu.pin')}
               >
                 <Pin className="w-4 h-4" />
               </button>
               <button
-                onClick={() => onToggleTodo(groupId, item.id, item.is_todo || 0)}
+                onClick={() => onToggleTodo(groupId, item.id, item.is_todo || false)}
                 className={`p-1.5 rounded transition-colors ${
-                  item.is_todo === 1
+                  item.is_todo
                     ? 'text-accent bg-accent/10 hover:bg-accent/20'
                     : 'text-muted-foreground hover:bg-muted'
                 }`}
-                title={item.is_todo === 1 ? t('menu.unmarkTodo') : t('menu.markTodo')}
+                title={item.is_todo ? t('menu.unmarkTodo') : t('menu.markTodo')}
               >
                 <CheckSquare className="w-4 h-4" />
               </button>

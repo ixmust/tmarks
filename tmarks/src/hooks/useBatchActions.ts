@@ -76,7 +76,7 @@ export function useBatchActions({
     try {
       await Promise.all(
         Array.from(selectedItems).map((itemId) =>
-          tabGroupsService.updateTabGroupItem(itemId, { is_pinned: 1 })
+          tabGroupsService.updateTabGroupItem(itemId, { is_pinned: true })
         )
       )
 
@@ -84,7 +84,7 @@ export function useBatchActions({
         prev.map((group) => ({
           ...group,
           items: group.items?.map((item) =>
-            selectedItems.has(item.id) ? { ...item, is_pinned: 1 } : item
+            selectedItems.has(item.id) ? { ...item, is_pinned: true } : item
           ),
         }))
       )
@@ -103,7 +103,7 @@ export function useBatchActions({
     try {
       await Promise.all(
         Array.from(selectedItems).map((itemId) =>
-          tabGroupsService.updateTabGroupItem(itemId, { is_todo: 1 })
+          tabGroupsService.updateTabGroupItem(itemId, { is_todo: true })
         )
       )
 
@@ -111,7 +111,7 @@ export function useBatchActions({
         prev.map((group) => ({
           ...group,
           items: group.items?.map((item) =>
-            selectedItems.has(item.id) ? { ...item, is_todo: 1 } : item
+            selectedItems.has(item.id) ? { ...item, is_todo: true } : item
           ),
         }))
       )
@@ -145,8 +145,8 @@ export function useBatchActions({
 
     selectedItemsData.forEach((item, index) => {
       markdown += `${index + 1}. [${item.title}](${item.url})\n`
-      if (item.is_pinned === 1) markdown += `   - 📌 ${t('item.pinned')}\n`
-      if (item.is_todo === 1) markdown += `   - ✅ ${t('item.todo')}\n`
+      if (item.is_pinned) markdown += `   - 📌 ${t('item.pinned')}\n`
+      if (item.is_todo) markdown += `   - ✅ ${t('item.todo')}\n`
       markdown += '\n'
     })
 

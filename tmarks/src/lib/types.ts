@@ -346,9 +346,9 @@ export interface TabGroupItem {
   favicon: string | null
   position: number
   created_at: string
-  is_pinned?: number
-  is_todo?: number
-  is_archived?: number
+  is_pinned?: boolean
+  is_todo?: boolean
+  is_archived?: boolean
 }
 
 export interface CreateTabGroupRequest {

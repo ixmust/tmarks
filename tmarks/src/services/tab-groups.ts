@@ -93,7 +93,7 @@ export const tabGroupsService = {
    */
   async updateTabGroupItem(
     itemId: string,
-    data: { title?: string; is_pinned?: number; is_todo?: number; is_archived?: number; position?: number }
+    data: { title?: string; is_pinned?: boolean; is_todo?: boolean; is_archived?: boolean; position?: number }
   ) {
     interface UpdateItemResponse {
       item: {
@@ -102,9 +102,9 @@ export const tabGroupsService = {
         url: string
         favicon?: string
         position: number
-        is_pinned?: number
-        is_todo?: number
-        is_archived?: number
+        is_pinned?: boolean
+        is_todo?: boolean
+        is_archived?: boolean
         created_at: string
       }
     }
@@ -130,9 +130,9 @@ export const tabGroupsService = {
         url: string
         favicon?: string
         position: number
-        is_pinned?: number
-        is_todo?: number
-        is_archived?: number
+        is_pinned?: boolean
+        is_todo?: boolean
+        is_archived?: boolean
         created_at: string
       }
     }
